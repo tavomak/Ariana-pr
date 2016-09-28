@@ -1,0 +1,93 @@
+@import 'http://bourbon.io/';
+@font-face {
+  font-family: 'avenir-r';
+  src: url("../fonts/AvenirNextLTPro-Regular.eot");
+  /* IE9 Compat Modes */
+  src: url("../fonts/AvenirNextLTPro-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/AvenirNextLTPro-Regular.woff") format("woff"), url("../fonts/AvenirNextLTPro-Regular.ttf") format("truetype"), url("../fonts/AvenirNextLTPro-Regular.svg#svgFontName") format("svg");
+  /* Legacy iOS */ }
+
+@font-face {
+  font-family: 'avenir-b';
+  src: url("../fonts/AvenirNextLTPro-Demi.eot");
+  /* IE9 Compat Modes */
+  src: url("../fonts/AvenirNextLTPro-Demi.eot?#iefix") format("embedded-opentype"), url("../fonts/AvenirNextLTPro-Demi.woff") format("woff"), url("../fonts/AvenirNextLTPro-Demi.ttf") format("truetype"), url("../fonts/AvenirNextLTPro-Demi.svg#svgFontName") format("svg");
+  /* Legacy iOS */ }
+
+/*
+WOOCOMMERCE - re-styling to match Bootstrap
+===========================================
+If you don't want this to use the WooCommerce plugin, or if you don't want these styles below, then delete this entire segment of the CSS and delete the corresponding segment of mariana-meneses.js
+
+Notice that some of the styles below are for compatibility with Bootstrap Theme. If you are not using Bootstrap Theme, then delete those portions below.
+*/
+/* line 229, D:/wamp/www/swp/wp-content/themes/MMv1/scss/modules/woocommerce.scss */
+.woocommerce ul.products li.product .price del,
+.onsale {
+  display: none; }
+
+/* line 233, D:/wamp/www/swp/wp-content/themes/MMv1/scss/modules/woocommerce.scss */
+.related.products {
+  clear: both; }
+
+/* line 237, D:/wamp/www/swp/wp-content/themes/MMv1/scss/modules/woocommerce.scss */
+footer .text-muted {
+  display: none; }
+
+/* line 241, D:/wamp/www/swp/wp-content/themes/MMv1/scss/modules/woocommerce.scss */
+.pp_pic_holder.pp_woocommerce {
+  overflow-x: visible; }
+
+/* line 244, D:/wamp/www/swp/wp-content/themes/MMv1/scss/modules/woocommerce.scss */
+div.pp_woocommerce a.pp_expand {
+  left: .5em !important; }
+
+/* line 247, D:/wamp/www/swp/wp-content/themes/MMv1/scss/modules/woocommerce.scss */
+div.pp_woocommerce .pp_close {
+  right: .5em !important; }
+
+/* line 251, D:/wamp/www/swp/wp-content/themes/MMv1/scss/modules/woocommerce.scss */
+.woocommerce ul.products li.product .price del, .onsale {
+  display: none; }
+
+/* line 255, D:/wamp/www/swp/wp-content/themes/MMv1/scss/modules/woocommerce.scss */
+footer .text-muted {
+  display: none; }
+
+/* line 258, D:/wamp/www/swp/wp-content/themes/MMv1/scss/modules/woocommerce.scss */
+h1.page-title {
+  display: block;
+  visibility: hidden;
+  height: 1em; }
+
+/* line 266, D:/wamp/www/swp/wp-content/themes/MMv1/scss/modules/woocommerce.scss */
+.woocommerce, a {
+  text-align: center;
+  color: #52504A;
+  font-family: avenir-r,sans-serif; }
+
+/* line 271, D:/wamp/www/swp/wp-content/themes/MMv1/scss/modules/woocommerce.scss */
+.related.products {
+  clear: both; }
+
+/* line 274, D:/wamp/www/swp/wp-content/themes/MMv1/scss/modules/woocommerce.scss */
+.woocommerce ul.products li.product, .woocommerce-page ul.products li.product {
+  float: left;
+  margin: 10px;
+  padding: 0;
+  position: relative;
+  width: 22.05%; }
+
+/* line 282, D:/wamp/www/swp/wp-content/themes/MMv1/scss/modules/woocommerce.scss */
+.woocommerce div.product div.images, .woocommerce-page div.product div.images, .woocommerce #content div.product div.images, .woocommerce-page #content div.product div.images {
+  width: auto; }
+
+/* line 284, D:/wamp/www/swp/wp-content/themes/MMv1/scss/modules/woocommerce.scss */
+.woocommerce .related ul.products li.product img, .woocommerce-page .related ul.products li.product img, .woocommerce .upsells.products ul.products li.product img, .woocommerce-page .upsells.products ul.products li.product img, .woocommerce .related ul li.product img, .woocommerce-page .related ul li.product img, .woocommerce .upsells.products ul li.product img, .woocommerce-page .upsells.products ul li.product img {
+  width: auto;
+  height: auto;
+  margin-right: 0px; }
+
+/*
+.woocommerce ul.products li.product,.woocommerce-page ul.products li.product{width:auto;}*/
+
+/*# sourceMappingURL=woocommerce.css.map */

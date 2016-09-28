@@ -1,0 +1,39 @@
+// fonts
+@font-face{
+    font-family: 'noto-r';
+    //src: url('../fonts/AvenirNextLTPro-Regular.eot'); /* IE9 Compat Modes */
+    src: //url('../fonts/AvenirNextLTPro-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/notosans-regular-webfont.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/notosans-regular-webfont.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/NotoSans-Regular.ttf')  format('truetype'), /* Safari, Android, iOS */
+       //url('../fonts/AvenirNextLTPro-Regular.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+@font-face{
+    font-family: 'noto-b';
+    //src: url('../fonts/AvenirNextLTPro-Demi.eot'); /* IE9 Compat Modes */
+    src: //url('../fonts/AvenirNextLTPro-Demi.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       //url('../fonts/AvenirNextLTPro-Demi.woff2') format('woff2'), /* Super Modern Browsers */
+       //url('../fonts/AvenirNextLTPro-Demi.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/NotoSans-Bold.ttf')  format('truetype'), /* Safari, Android, iOS */
+       //url('../fonts/AvenirNextLTPro-Demi.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+$font-1: 'noto-r', serif;
+$font-2: 'noto-b', serif;
+$regular: 400;
+$bold:700;
+
+// colors
+$color-1: #333333;
+$color-2: #EDEDEB;
+$white: white;
+
+// z-index
+
+$zindex-1: 1;
+$zindex-2: 2;
+$zindex-3: 3;
+$zindex-4: 4;
+$zindex-5: 5;
+
+
+

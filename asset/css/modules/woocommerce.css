@@ -1,0 +1,87 @@
+@import 'http://bourbon.io/';
+@font-face {
+  font-family: 'noto-r';
+  src: url("../fonts/notosans-regular-webfont.woff2") format("woff2"), url("../fonts/notosans-regular-webfont.woff") format("woff"), url("../fonts/NotoSans-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'noto-b';
+  src: url("../fonts/NotoSans-Bold.ttf") format("truetype");
+}
+
+/*
+WOOCOMMERCE - re-styling to match Bootstrap
+===========================================
+If you don't want this to use the WooCommerce plugin, or if you don't want these styles below, then delete this entire segment of the CSS and delete the corresponding segment of mariana-meneses.js
+
+Notice that some of the styles below are for compatibility with Bootstrap Theme. If you are not using Bootstrap Theme, then delete those portions below.
+*/
+.woocommerce ul.products li.product .price del,
+.onsale {
+  display: none;
+}
+
+.related.products {
+  clear: both;
+}
+
+footer .text-muted {
+  display: none;
+}
+
+.pp_pic_holder.pp_woocommerce {
+  overflow-x: visible;
+}
+
+div.pp_woocommerce a.pp_expand {
+  left: .5em !important;
+}
+
+div.pp_woocommerce .pp_close {
+  right: .5em !important;
+}
+
+.woocommerce ul.products li.product .price del, .onsale {
+  display: none;
+}
+
+footer .text-muted {
+  display: none;
+}
+
+h1.page-title {
+  display: block;
+  visibility: hidden;
+  height: 1em;
+}
+
+.woocommerce, a {
+  text-align: center;
+  color: #333333;
+  font-family: avenir-r,sans-serif;
+}
+
+.related.products {
+  clear: both;
+}
+
+.woocommerce ul.products li.product, .woocommerce-page ul.products li.product {
+  float: left;
+  margin: 10px;
+  padding: 0;
+  position: relative;
+  width: 22.05%;
+}
+
+.woocommerce div.product div.images, .woocommerce-page div.product div.images, .woocommerce #content div.product div.images, .woocommerce-page #content div.product div.images {
+  width: auto;
+}
+
+.woocommerce .related ul.products li.product img, .woocommerce-page .related ul.products li.product img, .woocommerce .upsells.products ul.products li.product img, .woocommerce-page .upsells.products ul.products li.product img, .woocommerce .related ul li.product img, .woocommerce-page .related ul li.product img, .woocommerce .upsells.products ul li.product img, .woocommerce-page .upsells.products ul li.product img {
+  width: auto;
+  height: auto;
+  margin-right: 0px;
+}
+
+/*
+.woocommerce ul.products li.product,.woocommerce-page ul.products li.product{width:auto;}*/

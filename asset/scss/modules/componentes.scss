@@ -1,0 +1,40 @@
+    span.page-numbers.current{
+        color: white;
+        background: #c6c6c6;
+        &:hover{
+            color: white;
+            background: #c6c6c6;
+        }
+    }
+
+.button-xl{
+    display: block;
+    color: $color-1;
+    border: 2px solid $color-1;
+    background: $color-2;
+    //font-weight: 400;
+    //font-size: 18px;
+    padding: 5px 50px 5px 50px;
+    width: 200px;
+    margin: 0 auto;
+    //position: relative;
+    bottom: 0;
+    text-align: center;
+    &:hover{
+        text-decoration: none;
+        color: $white;
+        background: $color-1;
+    }
+}
+
+.pagination>li>a, .pagination>li>span{
+    color: #000;
+    border-radius: 100%;
+    margin: 5px;
+}
+.pagination>li:last-child>a,
+.pagination>li:last-child>span,
+.pagination>li:first-child>a,
+.pagination>li:first-child>span{
+    border-radius: 100%;
+}

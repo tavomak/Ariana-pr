@@ -1,0 +1,286 @@
+@import 'http://bourbon.io/'; // http://bourbon.io/
+@import '../partials/media'; // Media Queries MQ(s,m,l,xl)
+@import '../partials/mixins'; // centrado vertical/horizontal y fallback fuentes
+@import '../partials/variables'; // colores, tipos de letra y personalizados
+
+/*
+WOOCOMMERCE - re-styling to match Bootstrap
+===========================================
+If you don't want this to use the WooCommerce plugin, or if you don't want these styles below, then delete this entire segment of the CSS and delete the corresponding segment of mariana-meneses.js
+
+Notice that some of the styles below are for compatibility with Bootstrap Theme. If you are not using Bootstrap Theme, then delete those portions below.
+*/
+
+//.woocommerce a:focus {
+//    outline: none
+//}
+//
+//.woocommerce .count {
+//    background: inherit
+//}
+//
+//.woocommerce .added_to_cart {
+//    display: block !important
+//}
+//
+//.woocommerce .woocommerce-error:before,
+//.woocommerce .woocommerce-info:before,
+//.woocommerce .woocommerce-message:before,
+//.woocommerce-page .woocommerce-error:before,
+//.woocommerce-page .woocommerce-info:before,
+//.woocommerce-page .woocommerce-message:before {
+//    padding-top: 0
+//}
+//
+//.woocommerce #content input.button,
+//.woocommerce #respond input#submit,
+//.woocommerce a.button,
+//.woocommerce button.button,
+//.woocommerce input.button,
+//.woocommerce-page #content input.button,
+//.woocommerce-page #respond input#submit,
+//.woocommerce-page a.button,
+//.woocommerce-page button.button,
+//.woocommerce-page input.button {
+//    /* .btn */
+//    display: inline-block;
+//    padding: 6px 12px;
+//    margin-bottom: 0px;
+//    font-size: 14px;
+//    font-weight: 400;
+//    line-height: 1.42857;
+//    text-align: center;
+//    white-space: nowrap;
+//    vertical-align: middle;
+//    cursor: pointer;
+//    -moz-user-select: none;
+//    background-image: none;
+//    border: 1px solid transparent;
+//    border-radius: 4px;
+//    /* .btn-primary */
+//    color: #FFF;
+//    //background: #337AB7;
+//    //border-color: #2E6DA4;
+//    /* BOOTSTRAP THEME .btn-primary */
+//    text-shadow: none;
+//    /* box-shadow: none; */
+//    /* Un-comment the line above if you are not using the BOOTSTRAP THEME. */
+//}
+//
+//.woocommerce #content input.button:hover,
+//.woocommerce #respond input#submit:hover,
+//.woocommerce a.button:hover,
+//.woocommerce button.button:hover,
+//.woocommerce input.button:hover,
+//.woocommerce-page #content input.button:hover,
+//.woocommerce-page #respond input#submit:hover,
+//.woocommerce-page a.button:hover,
+//.woocommerce-page button.button:hover,
+//.woocommerce-page input.button:hover {
+//    /* .btn-primary:hover */
+//    color: #FFF;
+//    background: #286090;
+//    border-color: #204D74;
+//    /* BOOTSTRAP THEME .btn-primary:hover */
+//    background-color: #265A88;
+//    background-position: 0px -15px;
+//}
+//
+//.woocommerce #content input.button.alt,
+//.woocommerce #respond input#submit.alt,
+//.woocommerce a.button.alt,
+//.woocommerce button.button.alt,
+//.woocommerce input.button.alt,
+//.woocommerce-page #content input.button.alt,
+//.woocommerce-page #respond input#submit.alt,
+//.woocommerce-page a.button.alt,
+//.woocommerce-page button.button.alt,
+//.woocommerce-page input.button.alt {
+//    /* .btn */
+//    display: inline-block;
+//    padding: 6px 12px;
+//    margin-bottom: 0px;
+//    font-size: 14px;
+//    font-weight: 400;
+//    line-height: 1.42857;
+//    text-align: center;
+//    white-space: nowrap;
+//    vertical-align: middle;
+//    cursor: pointer;
+//    -moz-user-select: none;
+//    background-image: none;
+//    border: 1px solid transparent;
+//    border-radius: 4px;
+//    /* .btn-success */
+//    color: #FFF;
+//    background-color: #5CB85C;
+//    border-color: #4CAE4C;
+//    /* BOOTSTRAP THEME .btn-success */
+//    background-image: linear-gradient(to bottom, #5CB85C 0px, #419641 100%);
+//    background-repeat: repeat-x;
+//    text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.2);
+//    box-shadow: 0px 1px 0px rgba(255, 255, 255, 0.15) inset, 0px 1px 1px rgba(0, 0, 0, 0.075);
+//    /* Extra fixes */
+//    text-shadow: none;
+//    /* box-shadow: none; */
+//    /* Un-comment the line above if you are NOT using the BOOTSTRAP THEME. */
+//}
+//
+//.woocommerce #content input.button.alt:hover,
+//.woocommerce #respond input#submit.alt:hover,
+//.woocommerce a.button.alt:hover,
+//.woocommerce button.button.alt:hover,
+//.woocommerce input.button.alt:hover,
+//.woocommerce-page #content input.button.alt:hover,
+//.woocommerce-page #respond input#submit.alt:hover,
+//.woocommerce-page a.button.alt:hover,
+//.woocommerce-page button.button.alt:hover,
+//.woocommerce-page input.button.alt:hover {
+//    /* Extras fixes */
+//    background: none;
+//    text-shadow: none;
+//    /* .btn-success:hover */
+//    color: #FFF;
+//    //background-color: #449D44;
+//    //border-color: #398439;
+//    /* BOOTSTRAP THEME .btn-success:hover */
+//    //background-color: #419641;
+//    background-position: 0px -15px;
+//}
+//
+//.woocommerce .woocommerce-error,
+//.woocommerce-page .woocommerce-error {
+//    /* Extra fixes */
+//    padding: 0;
+//    margin: 0;
+//    position: relative;
+//    border-top: none;
+//    background: none;
+//    text-shadow: none;
+//    list-style: outside none none !important;
+//    width: auto;
+//    /* box-shadow: none; */
+//    /* Un-comment the line above if you are NOT using the BOOTSTRAP THEME. */
+//    /* .alert */
+//    padding: 15px;
+//    margin-bottom: 20px;
+//    border: 1px solid transparent;
+//    border-radius: 4px;
+//    /* .alert-danger */
+//    color: #A94442;
+//    background-color: #F2DEDE;
+//    border-color: #EBCCD1;
+//    /* BOOTSTRAP THEME .alert */
+//    text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.2);
+//    box-shadow: 0px 1px 0px rgba(255, 255, 255, 0.25) inset, 0px 1px 2px rgba(0, 0, 0, 0.05);
+//    /* BOOTSTRAP THEME .alert */
+//    background-image: linear-gradient(to bottom, #F2DEDE 0px, #E7C3C3 100%);
+//    background-repeat: repeat-x;
+//    border-color: #DCA7A7;
+//}
+//
+//.woocommerce .woocommerce-error:after,
+//.woocommerce .woocommerce-error:before,
+//.woocommerce-page .woocommerce-error:after,
+//.woocommerce-page .woocommerce-error:before {
+//    display: none;
+//}
+//
+//.woocommerce div.product .woocommerce-tabs ul.tabs:before,
+//.woocommerce #content div.product .woocommerce-tabs ul.tabs:before,
+//.woocommerce-page div.product .woocommerce-tabs ul.tabs:before,
+//.woocommerce-page #content div.product .woocommerce-tabs ul.tabs:before {
+//    position: absolute;
+//    content: " ";
+//    width: 100%;
+//    bottom: 0;
+//    left: 0;
+//    z-index: 1;
+//    display: none;
+//    border-bottom-width: 0px;
+//    border-bottom-style: none;
+//}
+//
+//.woocommerce div.product .woocommerce-tabs ul.tabs li,
+//.woocommerce #content div.product .woocommerce-tabs ul.tabs li,
+//.woocommerce-page div.product .woocommerce-tabs ul.tabs li,
+//.woocommerce-page #content div.product .woocommerce-tabs ul.tabs li {
+//    border: 1px solid #dfdbdf;
+//    background: #f7f6f7;
+//    background: -webkit-gradient(linear, left top, left bottom, from(#f7f6f7), to(#dfdbdf));
+//    background: -webkit-linear-gradient(#f7f6f7, #dfdbdf);
+//    background: -moz-linear-gradient(center top, #f7f6f7 0%, #dfdbdf 100%);
+//    background: -moz-gradient(center top, #f7f6f7 0%, #dfdbdf 100%);
+//    display: none;
+//    position: relative;
+//    z-index: 0;
+//    -webkit-border-top-left-radius: 4px;
+//    -webkit-border-top-right-radius: 4px;
+//    -moz-border-radius-topleft: 4px;
+//    -moz-border-radius-topright: 4px;
+//    border-top-left-radius: 4px;
+//    border-top-right-radius: 4px;
+//    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.6);
+//    margin: 0 -5px;
+//    padding: 0 1em;
+//}
+
+.woocommerce ul.products li.product .price del,
+.onsale {
+    display: none
+}
+
+.related.products {
+    clear: both;
+}
+
+footer .text-muted {
+    display: none;
+}
+
+.pp_pic_holder.pp_woocommerce {
+    overflow-x: visible;
+}
+div.pp_woocommerce a.pp_expand{
+    left: .5em !important;
+}
+div.pp_woocommerce .pp_close{
+    right: .5em !important;
+}
+
+.woocommerce ul.products li.product .price del, .onsale {
+display:none
+}
+
+footer .text-muted{
+    display: none;
+}
+h1.page-title {
+    display: block;
+    visibility: hidden;
+    height: 1em;
+}
+// Otra parte
+
+
+.woocommerce,a{
+    text-align: center;
+    color: $color-1;
+    font-family: avenir-r,sans-serif;
+}
+.related.products{
+    clear: both;
+}
+.woocommerce ul.products li.product, .woocommerce-page ul.products li.product {
+    float: left;
+    margin: 10px;
+    padding: 0;
+    position: relative;
+    width: 22.05%;
+}
+
+.woocommerce div.product div.images,.woocommerce-page div.product div.images,.woocommerce #content div.product div.images,.woocommerce-page #content div.product div.images{width:auto;}
+
+.woocommerce .related ul.products li.product img,.woocommerce-page .related ul.products li.product img,.woocommerce .upsells.products ul.products li.product img,.woocommerce-page .upsells.products ul.products li.product img,.woocommerce .related ul li.product img,.woocommerce-page .related ul li.product img,.woocommerce .upsells.products ul li.product img,.woocommerce-page .upsells.products ul li.product img{width:auto;height:auto;margin-right:0px;}
+/*
+.woocommerce ul.products li.product,.woocommerce-page ul.products li.product{width:auto;}*/
