@@ -1,4 +1,5 @@
 <?php get_template_part('includes/header'); ?>
+        <div id="preloader">...</div><!-- loading -->
            <div class="wrapp">
             <section class="static_carousel">
                 <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
@@ -10,14 +11,23 @@
                     </ol>-->
                     <!-- Wrapper for slides -->
                     <div class="carousel-inner" role="listbox">
-                        <div class="item active"> <img src="<?php bloginfo('template_directory'); ?>/asset/img/7.jpg" alt="..."  style="width: 100%; height: auto;">
-                            <div class="carousel-caption"></div>
+                        <div class="item active"> <img src="<?php bloginfo('template_directory'); ?>/asset/img/slide1.jpg" alt="..."  style="width: 100%; height: auto;">
+                            <div class="carousel-caption"><h1>WELCOME TO MY BLOG</h1></div>
                         </div>
-                        <div class="item"> <img src="<?php bloginfo('template_directory'); ?>/asset/img/8.jpg" alt="..."  style="width: 100%; height: auto;">
-                            <div class="carousel-caption"></div>
+                        <div class="item"> <img src="<?php bloginfo('template_directory'); ?>/asset/img/slide2.jpg" alt="..."  style="width: 100%; height: auto;">
+                            <div class="carousel-caption"><h1>DELICIOUS FOOD</h1></div>
                         </div>
-                        <div class="item"> <img src="<?php bloginfo('template_directory'); ?>/asset/img/9.jpg" alt="..."  style="width: 100%; height: auto;">
-                            <div class="carousel-caption"></div>
+                        <div class="item"> <img src="<?php bloginfo('template_directory'); ?>/asset/img/slide3.jpg" alt="..."  style="width: 100%; height: auto;">
+                            <div class="carousel-caption"><h1>TOP EVENTS</h1></div>
+                        </div>
+                        <div class="item"> <img src="<?php bloginfo('template_directory'); ?>/asset/img/slide4.jpg" alt="..."  style="width: 100%; height: auto;">
+                            <div class="carousel-caption"><h1>TRAVEL TIPS</h1></div>
+                        </div>
+                        <div class="item"> <img src="<?php bloginfo('template_directory'); ?>/asset/img/slide5.jpg" alt="..."  style="width: 100%; height: auto;">
+                            <div class="carousel-caption"><h1>FASHION STYLING</h1></div>
+                        </div>
+                        <div class="item"> <img src="<?php bloginfo('template_directory'); ?>/asset/img/slide6.jpg" alt="..."  style="width: 100%; height: auto;">
+                            <div class="carousel-caption"><h1>STAY MOTIVATED</h1></div>
                         </div>
                     </div>
                     <!-- Controls -->
@@ -33,28 +43,24 @@
                         $wp_query = new WP_Query(array('showposts'=>3));
                         while($wp_query->have_posts()):
                         $wp_query->the_post(); ?>
-                            <ul class="">
-                                <li>
-                                    <a href="<?php the_permalink();?>">
-                                        <h4><?php echo the_title();?></h4>
+
+                            <div class="col-sm-4">
+                                <div class="hovereffect">
+                                   <img src="<?php the_post_thumbnail_url(); ?>" class="img-responsive">
+                                    <a href="<?php the_permalink();?>" class="link">
+                                        <div class="overlay">
+                                            <h2><?php echo the_title();?></h2>
+                                            <a class="info" href="#">Go There!</a>
+                                        </div>
                                     </a>
-                                </li>
-                                <li>
-                                    <p><?php// echo get_the_excerpt();?></p>
-                               </li>
-                                <li class="thu-content">
-                                   <a href="<?php the_permalink();?>">
-                                       <?php the_post_thumbnail(); ?>
-                                        <div class="clip-mask"></div>
-                                   </a>
-                                </li>
-                           </ul>
+                                </div>
+                            </div>
                         <?php endwhile; ?>
                         <?php wp_reset_query(); ?>
                </div>
             </section><!-- Recientes -->
             <section class="container categories">
-                <ul>
+                <ul class="row">
                     <?php
                     $args = array(
                         'exclude'  => array( 1 ),
@@ -63,7 +69,7 @@
                     );
                     wp_list_categories($args);
                     ?>
-                    <li><a href="">instagram</a></li>
+                    <li><a href="https://www.instagram.com/arianapr/" target="_blank">instagram</a></li>
                 </ul>
             </section><!-- Categorias-->
 
@@ -73,19 +79,19 @@
                     <h2>Follow me</h2>
                     <ul class="container">
                         <li class="fl social-icon">
-                           <a href="https://www.instagram.com/marianameneses/">
-                                <img src="<?php bloginfo('template_directory'); ?>/asset/img/ins-logo.jpg" onmouseover="this.src='<?php bloginfo('template_directory'); ?>/asset/img/ins-logo-hover.jpg'" onmouseout="this.src=' <?php bloginfo('template_directory'); ?>/asset/img/ins-logo.jpg '" alt="https://www.instagram.com/marianameneses/" class="icon">
+                           <a href="https://www.instagram.com/arianapr/" target="_blank">
+                                <img src="<?php bloginfo('template_directory'); ?>/asset/img/ins-logo.jpg" onmouseover="this.src='<?php bloginfo('template_directory'); ?>/asset/img/ins-logo-hover.jpg'" onmouseout="this.src=' <?php bloginfo('template_directory'); ?>/asset/img/ins-logo.jpg '" alt="https://www.instagram.com/arianapr/" class="icon">
                                 <!--<p>instagram</p>-->
                             </a>
                         </li>
                         <li class="fl social-icon">
-                            <a href="https://www.facebook.com/mm.estilo/">
-                                <img src="<?php bloginfo('template_directory'); ?>/asset/img/fac-logo.jpg" onmouseover="this.src='<?php bloginfo('template_directory'); ?>/asset/img/fac-logo-hover.jpg'" onmouseout="this.src=' <?php bloginfo('template_directory'); ?>/asset/img/fac-logo.jpg '" alt="https://www.facebook.com/mm.estilo/" class="icon">
+                            <a href="https://www.facebook.com/ariana.p.33/" target="_blank">
+                                <img src="<?php bloginfo('template_directory'); ?>/asset/img/fac-logo.jpg" onmouseover="this.src='<?php bloginfo('template_directory'); ?>/asset/img/fac-logo-hover.jpg'" onmouseout="this.src=' <?php bloginfo('template_directory'); ?>/asset/img/fac-logo.jpg '" alt="https://www.facebook.com/ariana.p.33/" class="icon">
                                 <!--<p>facebook</p>-->
                             </a>
                         </li>
                         <li class="fl social-icon">
-                            <a href="https://twitter.com/mm_electra">
+                            <a href="https://twitter.com/arianaprmedia" target="_blank">
                                 <img src="<?php bloginfo('template_directory'); ?>/asset/img/twi-logo.jpg" onmouseover="this.src='<?php bloginfo('template_directory'); ?>/asset/img/twi-logo-hover.jpg'" onmouseout="this.src=' <?php bloginfo('template_directory'); ?>/asset/img/twi-logo.jpg '" alt="https://twitter.com/mm_electra" class="icon">
                                 <!--<p>twitter</p>-->
                             </a>

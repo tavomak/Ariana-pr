@@ -23,7 +23,15 @@ footer, header, hgroup, menu, nav, section, main {
 	display: block;
 }
 
-html{
+html, body{
+    height: 100%;
+    margin: 0;
+}
+.wrapper {
+  min-height: 75%;
+
+  /* Equal to height of footer */
+  /* But also accounting for potential margin-bottom of last child */
 }
 body{
     font-family: $font-1;

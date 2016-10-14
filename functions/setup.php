@@ -13,7 +13,7 @@ if (! isset($content_width))
 	$content_width = 600;
 
 function a_pr_excerpt_readmore() {
-    return '&nbsp; <a href="'. get_permalink() . '">' . '&hellip; ' . __('Read more', 'a-pr') . ' <i class="glyphicon glyphicon-arrow-right"></i>' . '</a></p>';
+    return '&hellip;';//'&nbsp; <a href="'. get_permalink() . '">' . '&hellip; ' . __('Read more', 'a-pr') . ' <i class="glyphicon glyphicon-arrow-right"></i>' . '</a></p>';
 }
 add_filter('excerpt_more', 'a_pr_excerpt_readmore');
 
@@ -55,7 +55,7 @@ add_filter( 'body_class', 'a_pr_browser_body_class' );
 
 // Add post formats support. See http://codex.wordpress.org/Post_Formats
 
-add_theme_support('post-formats', array('aside', 'gallery', 'link', 'image', 'quote', 'status', 'video', 'audio', 'chat'));
+//add_theme_support('post-formats', array('aside', 'gallery', 'link', 'image', 'quote', 'status', 'video', 'audio', 'chat'));
 
 // Bootstrap pagination
 

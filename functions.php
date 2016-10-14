@@ -13,6 +13,7 @@ require_once locate_template('/functions/feedback.php');
 require_once locate_template('/functions/woocommerce-setup.php');
 require_once locate_template('/functions/custom-frases.php');
 require locate_template('/functions/theme-hooks.php');
+require locate_template('/functions/develop.php');
 
 //include locate_template('/includes/options/bst-options.php');
 

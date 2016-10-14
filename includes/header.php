@@ -24,7 +24,7 @@
 <![endif]-->
         <div class="brand text-center">
             <a  href="<?php echo home_url('/'); ?>">
-                <img src="<?php bloginfo('template_directory'); ?>/asset/img/apr-logo.jpg" alt="Ariana PR">
+                <img class="" src="<?php bloginfo('template_directory'); ?>/asset/img/apr-logo3.jpg" alt="Ariana PR">
             </a>
         </div>
         <nav class="navbar navbar-default navbar-static-top navbar-upper">
@@ -53,5 +53,5 @@
                 </div><!-- /.navbar-collapse -->
             </div><!-- /.container -->
         </nav>
-
             <?php tha_header_before(); ?>
+        <div class="wrapper">

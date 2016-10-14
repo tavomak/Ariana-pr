@@ -54,7 +54,10 @@ Delete (or comment-out) the next two lines of code below if you don't want the B
   	wp_register_script('bootstrap-js', get_template_directory_uri() . '/asset/js/bootstrap.min.js', false, null, true);
 	wp_enqueue_script('bootstrap-js');
 
-	wp_register_script('a-pr-js', get_template_directory_uri() . '/asset/js/a-pr.js', false, null, true);
+	wp_register_script('a-pr-preload', get_template_directory_uri() . '/asset/js/preload.js', false, null, true);
+	wp_enqueue_script('a-pr-preload');
+
+    wp_register_script('a-pr-js', get_template_directory_uri() . '/asset/js/a-pr.js', false, null, true);
 	wp_enqueue_script('a-pr-js');
 
 	if (is_singular() && comments_open() && get_option('thread_comments')) {
