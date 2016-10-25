@@ -1,12 +1,12 @@
 @import 'http://bourbon.io/';
 @font-face {
   font-family: 'noto-r';
-  src: url("../fonts/notosans-regular-webfont.woff2") format("woff2"), url("../fonts/notosans-regular-webfont.woff") format("woff"), url("../fonts/NotoSans-Regular.ttf") format("truetype");
+  src: url("../fonts/lora-regular-webfont.woff2") format("woff2"), url("../fonts/lora-regular-webfont.woff") format("woff"), url("../fonts/lora-regular-webfont.ttf") format("truetype");
 }
 
 @font-face {
   font-family: 'noto-b';
-  src: url("../fonts/NotoSans-Bold.ttf") format("truetype");
+  src: url("../fonts/lora-bold-webfont.ttf") format("truetype");
 }
 
 /*

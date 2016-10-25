@@ -1,21 +1,21 @@
 // fonts
 @font-face{
     font-family: 'noto-r';
-    //src: url('../fonts/AvenirNextLTPro-Regular.eot'); /* IE9 Compat Modes */
-    src: //url('../fonts/AvenirNextLTPro-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('../fonts/notosans-regular-webfont.woff2') format('woff2'), /* Super Modern Browsers */
-       url('../fonts/notosans-regular-webfont.woff') format('woff'), /* Pretty Modern Browsers */
-       url('../fonts/NotoSans-Regular.ttf')  format('truetype'), /* Safari, Android, iOS */
-       //url('../fonts/AvenirNextLTPro-Regular.svg#svgFontName') format('svg'); /* Legacy iOS */
+    //src: url('../fonts/lora-regular-webfont.eot'); /* IE9 Compat Modes */
+    src: //url('../fonts/lora-regular-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/lora-regular-webfont.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/lora-regular-webfont.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/lora-regular-webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
+       //url('../fonts/lora-regular-webfont.svg#svgFontName') format('svg'); /* Legacy iOS */
 }
 @font-face{
     font-family: 'noto-b';
-    //src: url('../fonts/AvenirNextLTPro-Demi.eot'); /* IE9 Compat Modes */
-    src: //url('../fonts/AvenirNextLTPro-Demi.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       //url('../fonts/AvenirNextLTPro-Demi.woff2') format('woff2'), /* Super Modern Browsers */
-       //url('../fonts/AvenirNextLTPro-Demi.woff') format('woff'), /* Pretty Modern Browsers */
-       url('../fonts/NotoSans-Bold.ttf')  format('truetype'), /* Safari, Android, iOS */
-       //url('../fonts/AvenirNextLTPro-Demi.svg#svgFontName') format('svg'); /* Legacy iOS */
+    //src: url('../fonts/lora-bold-webfont.eot'); /* IE9 Compat Modes */
+    src: //url('../fonts/lora-bold-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       //url('../fonts/lora-bold-webfont.woff2') format('woff2'), /* Super Modern Browsers */
+       //url('../fonts/lora-bold-webfont.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/lora-bold-webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
+       //url('../fonts/lora-bold-webfont.svg#svgFontName') format('svg'); /* Legacy iOS */
 }
 $font-1: 'noto-r', serif;
 $font-2: 'noto-b', serif;
@@ -24,7 +24,8 @@ $bold:700;
 
 // colors
 $color-1: #333333;
-$color-2: #EDEDEB;
+$color-2: rgb(255, 231, 168);
+$color-3: #b92b27;
 $white: white;
 
 // z-index

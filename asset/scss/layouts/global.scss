@@ -39,13 +39,13 @@ body{
     //background-image: url("../img/tr1.png"), url("../img/tr2.png"), url("../img/tr3.png");
 }
 h1, h2, h3, h4{
-    font-family: $font-1;
+    font-family: $font-2;
 }
-p, a{
+p, a, ol li{
     font-size: 16px;
     line-height: 120%;
 }
-ol, ul {
+ul {
 	list-style: none;
 }
 blockquote, q {
@@ -86,5 +86,43 @@ a{
     clear: both;
 }
 hr{
-    margin: 0; padding: 0;
+    margin: 15px; padding: 0;
+}
+a:hover{text-decoration: none;}
+.wrapp{
+    @include linear-gradient(to top, #0066b0, #003356);
+    background-image: url(../img/bk.png);
+    background-size: contain;
+}
+.wrapper-pag{
+    display: table;
+    width: 100%;
+    text-align: center;
+}
+.footer{
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+.contacto{
+    .modal{
+        .modal-content{
+            //background: rgba(0, 0, 0, 0.9);
+        }
+    }
+}
+.recent{
+    background: rgba(26, 41, 59, 0.5);
+    color: $white;
+    padding:20px 0 30px 0;
+    h1{
+        text-align: center;
+        margin-bottom: 20px;
+    }
+        img{
+            min-width: 100%;
+            height: auto;
+            min-height: 300px;
+            //max-height: 340px;
+            @include transition (all .4s linear);
+        }
 }

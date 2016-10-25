@@ -1,0 +1,43 @@
+.static_carousel{
+    .carousel{
+        .carousel-inner{
+            .item{
+                max-height: 70vh;
+                width: 100%;
+                .carousel-caption{
+                    top: 55%;
+                    width: 100%;
+                    left: 0;
+                    h1{
+                        background: rgba(0,0,0,0.3);
+                        padding: 8px;
+                        //border: 1px solid white;
+                        border-left: 0;
+                        border-right: 0;
+                    }
+                }
+                img{
+                }
+            }
+        }
+    }
+}
+.frases-slide{
+    min-height:340px;
+    .slide{
+        margin: 70px 0 0 0;
+        min-height: 250px;
+        h1,h2,h3,h4,h5{
+            padding: 30px 0 0 0;
+            margin: 0 auto;
+            max-width: 75%;
+            font-family: $font-1;
+            //font-size: 36px;
+        }
+        p{
+            margin: 20px 0 0 0;}
+            color: $white;
+    }
+    .carousel-control{
+        background: none;}
+}

@@ -44,7 +44,7 @@
                         wp_nav_menu( array(
                             'theme_location'    => 'navbar-primary',
                             'depth'             => 3,
-                            'menu_class'        => 'nav navbar-nav',
+                            'menu_class'        => 'nav navbar-nav text-center',
                             'fallback_cb'       => 'wp_bootstrap_navwalker::fallback',
                             'walker'            => new wp_bootstrap_navwalker())
                         );
@@ -54,4 +54,4 @@
             </div><!-- /.container -->
         </nav>
             <?php tha_header_before(); ?>
-        <div class="wrapper">
+        <!--<div class="wrapper">-->

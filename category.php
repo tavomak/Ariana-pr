@@ -1,7 +1,7 @@
 <?php get_template_part('includes/header'); ?>
 <div id="preloader">...</div><!-- loading -->
 <section class="container-fluid promo">
-    <?php if ( in_category( 'attact' ) ) : ?>
+    <?php if ( in_category( 'attract' ) ) : ?>
        <div class="promo-content">
             <img src="<?php bloginfo('template_directory'); ?>/asset/img/slide6.jpg" alt="" class="img-responsive">
             <div class="caption text-center">
@@ -44,11 +44,11 @@
         <?php while ( have_posts() ) : the_post(); ?>
         <div class="col-sm-4 article">
             <div class="hovereffect">
-               <img src="<?php the_post_thumbnail_url(); ?>" class="img-responsive">
+               <img src="<?php the_post_thumbnail_url(); ?>" class="img">
                 <a href="<?php the_permalink();?>" class="link">
                     <div class="overlay">
                         <h2><?php echo the_title();?></h2>
-                        <a class="info" href="#">Go There!</a>
+                        <a class="info" href="<?php the_permalink();?>">Go There!</a>
                     </div>
                 </a>
             </div>
@@ -58,16 +58,15 @@
         <?php endwhile; ?>
     </div><!-- /.row -->
 </section><!-- /.container -->
-                <div class="wrapper-pag">
+            <div class="wrapper-pag">
         <?php if ( function_exists('a_pr_pagination') ) { a_pr_pagination(); } else if ( is_paged() ) { ?>
-                      <ul class="pagination">
-                        <li class="older"><?php next_posts_link('<i class="glyphicon glyphicon-arrow-left"></i> ' . __('Previous', 'a-pr')) ?></li>
-                        <li class="newer"><?php previous_posts_link(__('Next', 'a-pr') . ' <i class="glyphicon glyphicon-arrow-right"></i>') ?></li>
-                      </ul>
-                 </div>
+                <ul class="pagination">
+                    <li class="older"><?php next_posts_link('<i class="glyphicon glyphicon-arrow-left"></i> ' . __('Previous', 'a-pr')) ?></li>
+                    <li class="newer"><?php previous_posts_link(__('Next', 'a-pr') . ' <i class="glyphicon glyphicon-arrow-right"></i>') ?></li>
+                </ul>
+            </div>
         <?php } ?>
         <?php else: ?>
-        <h1 class="text-center">No encontramos lo que buscas...</h1>
+        <h1 class="text-center">soon we'll be found</h1>
         <?php endif; ?>
-
 <?php get_template_part('includes/footer'); ?>
