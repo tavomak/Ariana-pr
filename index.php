@@ -38,15 +38,15 @@
     <?php get_template_part('includes/slideshow'); ?>
     <section class="recent container-fluid">
        <div class="container">
-           <h1>Recent Post</h1>
+           <h1>Recent Blog Post</h1>
         <?php
-        $recents = new WP_Query(array('showposts'=>3,'cat'=>"-9"));
+        $recents = new WP_Query(array('showposts'=>3,'cat'=>"3,4,5,6,7"));
         ?>
         <?php if ( $recents->have_posts() ) : while ( $recents->have_posts() ) : $recents->the_post(); ?>
 
             <div class="col-sm-4">
                 <div class="hovereffect">
-                   <img src="<?php the_post_thumbnail_url('medium'); ?>" class="">
+                   <img src="<?php the_post_thumbnail_url('medium_large'); ?>" class="">
                     <a href="<?php the_permalink();?>" class="link">
                         <div class="overlay">
                             <h2><?php echo the_title();?></h2>
@@ -75,7 +75,7 @@
 
             <div class="col-sm-4">
                 <div class="hovereffect">
-                   <img src="<?php the_post_thumbnail_url('medium'); ?>" class="">
+                   <img src="<?php the_post_thumbnail_url('medium_large'); ?>" class="">
                     <a href="<?php the_permalink();?>" class="link">
                         <div class="overlay">
                             <h2><?php echo the_title();?></h2>
@@ -113,26 +113,26 @@
             <ul class="container">
                 <li class="fl social-icon">
                    <a href="https://www.instagram.com/arianapr/" target="_blank">
-                        <img src="<?php bloginfo('template_directory'); ?>/asset/img/ins-logo.jpg" onmouseover="this.src='<?php bloginfo('template_directory'); ?>/asset/img/ins-logo-hover.jpg'" onmouseout="this.src=' <?php bloginfo('template_directory'); ?>/asset/img/ins-logo.jpg '" alt="https://www.instagram.com/arianapr/" class="icon">
+                        <img src="<?php bloginfo('template_directory'); ?>/asset/img/ins-logo.png" onmouseover="this.src='<?php bloginfo('template_directory'); ?>/asset/img/ins-logo-hover.png'" onmouseout="this.src=' <?php bloginfo('template_directory'); ?>/asset/img/ins-logo.png '" alt="https://www.instagram.com/arianapr/" class="icon">
                         <!--<p>instagram</p>-->
                     </a>
                 </li>
                 <li class="fl social-icon">
                     <a href="https://www.facebook.com/ariana.p.33/" target="_blank">
-                        <img src="<?php bloginfo('template_directory'); ?>/asset/img/fac-logo.jpg" onmouseover="this.src='<?php bloginfo('template_directory'); ?>/asset/img/fac-logo-hover.jpg'" onmouseout="this.src=' <?php bloginfo('template_directory'); ?>/asset/img/fac-logo.jpg '" alt="https://www.facebook.com/ariana.p.33/" class="icon">
+                        <img src="<?php bloginfo('template_directory'); ?>/asset/img/fac-logo.png" onmouseover="this.src='<?php bloginfo('template_directory'); ?>/asset/img/fac-logo-hover.png'" onmouseout="this.src=' <?php bloginfo('template_directory'); ?>/asset/img/fac-logo.png '" alt="https://www.facebook.com/ariana.p.33/" class="icon">
                         <!--<p>facebook</p>-->
                     </a>
                 </li>
                 <li class="fl social-icon">
                     <a href="https://twitter.com/arianaprmedia" target="_blank">
-                        <img src="<?php bloginfo('template_directory'); ?>/asset/img/twi-logo.jpg" onmouseover="this.src='<?php bloginfo('template_directory'); ?>/asset/img/twi-logo-hover.jpg'" onmouseout="this.src=' <?php bloginfo('template_directory'); ?>/asset/img/twi-logo.jpg '" alt="https://twitter.com/mm_electra" class="icon">
+                        <img src="<?php bloginfo('template_directory'); ?>/asset/img/twi-logo.png" onmouseover="this.src='<?php bloginfo('template_directory'); ?>/asset/img/twi-logo-hover.png'" onmouseout="this.src=' <?php bloginfo('template_directory'); ?>/asset/img/twi-logo.png '" alt="https://twitter.com/arianaprmedia" class="icon">
                         <!--<p>twitter</p>-->
                     </a>
                 </li>
             </ul>
             <h3>subcribe (Member VIP)</h3>
             <div class="input-group">
-                <input type="text" class="form-control" placeholder="Search for...">
+                <input type="text" class="form-control" placeholder="">
                 <span class="input-group-btn">
                     <button class="btn btn-default" type="button">Go!</button>
                 </span>

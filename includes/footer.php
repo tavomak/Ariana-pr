@@ -23,7 +23,7 @@
                 <div class="col-lg-12 site-sub-footer">
                     <ul class="list-inline">
                         <li >
-                            <p class="copy">&copy; <?php echo date('Y'); ?>, Todos los derechos reservados.</p>
+                            <p class="copy">&copy; <?php echo date('Y'); ?>, All rights reserved.</p>
                         </li>
                         <li class="list-inline">
                            <a href="http://estelaestudio.com/">

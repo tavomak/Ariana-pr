@@ -434,7 +434,7 @@ svg {
 }
 
 .categories ul li a:hover:before {
-  opacity: 1;
+  opacity: 0;
 }
 
 .categories ul li a:hover span {
@@ -639,7 +639,7 @@ svg {
 
 .social {
   color: white;
-  background: black;
+  background: rgba(26, 41, 59, 0.5);
 }
 
 .social .socio {
@@ -665,6 +665,48 @@ svg {
   max-width: 400px;
   margin: 0 auto;
   margin: 15px 0 25px 0;
+}
+
+.promo-bio {
+  padding: 0;
+}
+
+.promo-bio .promo-bio-content img {
+  width: 100%;
+  height: auto;
+}
+
+.gradient-red {
+  margin: 0 0 50px 0;
+  padding: 50px 0 50px 0;
+  background-color: #e00a0a;
+  background-image: -webkit-radial-gradient(#e00a0a, #8e0606);
+  background-image: radial-gradient(  #e00a0a, #8e0606);
+}
+
+.gradient-red h1 {
+  color: white;
+}
+
+.bio-content h1 {
+  margin: 50px 0 50px 0;
+}
+
+.bio-content strong {
+  font-size: 18px;
+}
+
+.bio-gallery {
+  margin-top: 50px;
+}
+
+.grid-item {
+  width: 33%;
+  padding: 5px;
+}
+
+.grid-item--width2 {
+  width: 400px;
 }
 
 .articulo {

@@ -61,7 +61,7 @@
                 @include transform (scale(1.2));
             }
             a:hover:before{
-                opacity: 1;
+                opacity: 0;
             }
             a:hover span{
                 opacity: 1;
@@ -228,7 +228,7 @@
 }
 .social{
     color: $white;
-    background: black;
+    background: $color-4;
     .socio{
         max-width: 400px;
         margin: 0 auto;
@@ -250,3 +250,31 @@
         margin: 15px 0 25px 0;
     }
 }
+.promo-bio{
+    padding: 0;
+    .promo-bio-content{
+        img{
+            width: 100%;
+            height: auto;
+        }
+    }
+}
+.gradient-red{
+    margin: 0 0 50px 0;
+    padding: 50px 0 50px 0;
+    @include radial-gradient(#e00a0a, #8e0606);
+    h1{
+        color: $white;
+    }
+}
+.bio-content{
+    h1{margin: 50px 0 50px 0;}
+    strong{
+        font-size: 18px;
+    }
+}
+.bio-gallery{margin-top: 50px;}
+.grid-item { width: 33%;
+    padding: 5px;
+}
+.grid-item--width2 { width: 400px; }

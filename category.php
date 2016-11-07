@@ -4,37 +4,44 @@
     <?php if ( in_category( 'attract' ) ) : ?>
        <div class="promo-content">
             <img src="<?php bloginfo('template_directory'); ?>/asset/img/slide6.jpg" alt="" class="img-responsive">
-            <div class="caption text-center">
+            <!--<div class="caption text-center">
                <h1>Attract what you want</h1>
-            </div>
+            </div>-->
        </div>
     <?php elseif ( in_category( 'work-out' ) ) : ?>
         <div class="promo-content">
             <img src="<?php bloginfo('template_directory'); ?>/asset/img/slide2.jpg" alt="" class="img-responsive">
-            <div class="caption text-center">
+            <!--<div class="caption text-center">
                 <h1>Eat but work out</h1>
-            </div>
+            </div>-->
         </div>
     <?php elseif ( in_category( 'fomo-events' ) ) : ?>
        <div class="promo-content">
             <img src="<?php bloginfo('template_directory'); ?>/asset/img/slide3.jpg" alt="" class="img-responsive">
-            <div class="caption text-center">
+            <!--<div class="caption text-center">
                <h1>Fomo-events</h1>
-           </div>
+           </div>-->
        </div>
     <?php elseif ( in_category( 'style' ) ) : ?>
        <div class="promo-content">
            <img src="<?php bloginfo('template_directory'); ?>/asset/img/slide5.jpg" alt="" class="img-responsive">
-           <div class="caption text-center">
+           <!--<div class="caption text-center">
                <h1>Style with attitude</h1>
-           </div>
+           </div>-->
        </div>
     <?php elseif ( in_category( 'travel-the-word' ) ) : ?>
        <div class="promo-content">
            <img src="<?php bloginfo('template_directory'); ?>/asset/img/slide4.jpg" alt="" class="img-responsive">
-           <div class="caption text-center">
+           <!--<div class="caption text-center">
                <h1>Take risks. Travel the world</h1>
-           </div>
+           </div>-->
+       </div>
+    <?php elseif ( in_category( 'my-entertainment-world' ) ) : ?>
+       <div class="promo-content">
+           <img src="<?php bloginfo('template_directory'); ?>/asset/img/slide7.jpg" alt="" class="img-responsive">
+           <!--<div class="caption text-center">
+               <h1>Take risks. Travel the world</h1>
+           </div>-->
        </div>
     <?php endif; ?>
 </section>

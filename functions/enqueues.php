@@ -60,6 +60,16 @@ Delete (or comment-out) the next two lines of code below if you don't want the B
     wp_register_script('a-pr-js', get_template_directory_uri() . '/asset/js/a-pr.js', false, null, true);
 	wp_enqueue_script('a-pr-js');
 
+    /*if(is_page('bio') ) {
+
+        wp_register_script('maso', get_template_directory_uri() . '/asset/js/masonry.pkgd.min.js', false, null, false);
+        wp_register_script('maso-in', get_template_directory_uri() . '/asset/js/a-pr-m.js', false, null, false);
+
+        wp_enqueue_script('maso');
+        wp_enqueue_script('maso-in');
+
+    }*/
+
 	if (is_singular() && comments_open() && get_option('thread_comments')) {
 		wp_enqueue_script('comment-reply');
 	}
