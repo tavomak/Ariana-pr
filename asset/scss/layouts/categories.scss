@@ -16,7 +16,9 @@
                 z-index: 5;
                 text-transform: capitalize;
                 @include MQ(L){
-                    font-size: 16px;
+                    font-size: 22px;
+                }@include MQ(M){
+                    font-size: 19px;
                 }
                 font-size: 24px;
                 overflow: hidden;
@@ -262,11 +264,13 @@
 .gradient-red{
     margin: 0 0 50px 0;
     padding: 50px 0 50px 0;
+    background-color: red;
     @include radial-gradient(#e00a0a, #8e0606);
     h1{
         color: $white;
     }
 }
+.no-cssgradients .gradient-red{background: url(../img/gradient-red.jpg) repeat-x;}
 .bio-content{
     h1{margin: 50px 0 50px 0;}
     strong{

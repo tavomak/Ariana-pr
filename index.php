@@ -64,10 +64,10 @@
 
       <section class="recent container-fluid">
        <div class="container">
-           <h1>My Entertainment World</h1>
+           <h1>Media Outlets</h1>
         <?php
         $recents = new WP_Query(array(
-            'category_name'=>'My Entertainment World',
+            'category_name'=>'Media Outlets',
             'showposts'=>3
         ));
         ?>

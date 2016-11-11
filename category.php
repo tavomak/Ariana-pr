@@ -36,7 +36,7 @@
                <h1>Take risks. Travel the world</h1>
            </div>-->
        </div>
-    <?php elseif ( in_category( 'my-entertainment-world' ) ) : ?>
+    <?php elseif ( in_category( 'media-outlets' ) ) : ?>
        <div class="promo-content">
            <img src="<?php bloginfo('template_directory'); ?>/asset/img/slide7.jpg" alt="" class="img-responsive">
            <!--<div class="caption text-center">

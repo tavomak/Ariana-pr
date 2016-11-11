@@ -14,10 +14,18 @@
 .articulo-title{
     background: $color-3;
     padding: 10px;
-    h1{
+    a{
+        font-size: 36px;
+        color: $white;
         @include MQ(LXL){
             margin-left: 50px;
-            color: $white;
+        }
+    }
+    h1{
+        font-size: 36px;
+        color: $white;
+        @include MQ(LXL){
+            margin-left: 50px;
         }
     }
 }

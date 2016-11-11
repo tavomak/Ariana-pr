@@ -181,7 +181,7 @@ a:hover {
 }
 
 .recent img {
-  min-width: 100%;
+  width: 100%;
   height: auto;
   min-height: 300px;
   -webkit-transition: all 0.4s linear;
@@ -378,7 +378,13 @@ svg {
 
 @media only screen and (min-width: 769px) and (max-width: 1280px) {
   .categories ul li a {
-    font-size: 16px;
+    font-size: 22px;
+  }
+}
+
+@media handheld, only screen and (min-width: 481px) and (max-width: 768px) {
+  .categories ul li a {
+    font-size: 19px;
   }
 }
 
@@ -679,6 +685,7 @@ svg {
 .gradient-red {
   margin: 0 0 50px 0;
   padding: 50px 0 50px 0;
+  background-color: red;
   background-color: #e00a0a;
   background-image: -webkit-radial-gradient(#e00a0a, #8e0606);
   background-image: radial-gradient(  #e00a0a, #8e0606);
@@ -686,6 +693,10 @@ svg {
 
 .gradient-red h1 {
   color: white;
+}
+
+.no-cssgradients .gradient-red {
+  background: url(../img/gradient-red.jpg) repeat-x;
 }
 
 .bio-content h1 {
@@ -730,10 +741,25 @@ svg {
   padding: 10px;
 }
 
+.articulo-title a {
+  font-size: 36px;
+  color: white;
+}
+
+@media only screen and (min-width: 769px) {
+  .articulo-title a {
+    margin-left: 50px;
+  }
+}
+
+.articulo-title h1 {
+  font-size: 36px;
+  color: white;
+}
+
 @media only screen and (min-width: 769px) {
   .articulo-title h1 {
     margin-left: 50px;
-    color: white;
   }
 }
 
