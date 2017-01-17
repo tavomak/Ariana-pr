@@ -29,7 +29,7 @@
                <h1>Style with attitude</h1>
            </div>-->
        </div>
-    <?php elseif ( in_category( 'travel-the-word' ) ) : ?>
+    <?php elseif ( in_category( 'travel-the-world' ) ) : ?>
        <div class="promo-content">
            <img src="<?php bloginfo('template_directory'); ?>/asset/img/slide4.jpg" alt="" class="img-responsive">
            <!--<div class="caption text-center">
@@ -45,11 +45,11 @@
        </div>
     <?php endif; ?>
 </section>
-<section class="container-fluid archive">
+<section class="container-fluid archive" id="content">
     <div class="row">
         <?php if ( have_posts() ) : ?>
         <?php while ( have_posts() ) : the_post(); ?>
-        <div class="col-sm-4 article">
+        <div class="col-sm-4 article post">
             <div class="hovereffect">
                <img src="<?php the_post_thumbnail_url(); ?>" class="img">
                 <a href="<?php the_permalink();?>" class="link">
@@ -65,15 +65,16 @@
         <?php endwhile; ?>
     </div><!-- /.row -->
 </section><!-- /.container -->
-            <div class="wrapper-pag">
+            <div class="wrapper-pag"  id="#nav-below">
         <?php if ( function_exists('a_pr_pagination') ) { a_pr_pagination(); } else if ( is_paged() ) { ?>
                 <ul class="pagination">
-                    <li class="older"><?php next_posts_link('<i class="glyphicon glyphicon-arrow-left"></i> ' . __('Previous', 'a-pr')) ?></li>
+                    <li class="older" id="nav-below-first"><?php next_posts_link('<i class="glyphicon glyphicon-arrow-left"></i> ' . __('Previous', 'a-pr')) ?></li>
                     <li class="newer"><?php previous_posts_link(__('Next', 'a-pr') . ' <i class="glyphicon glyphicon-arrow-right"></i>') ?></li>
                 </ul>
-            </div>
         <?php } ?>
         <?php else: ?>
         <h1 class="text-center">soon we'll be found</h1>
         <?php endif; ?>
+            </div>
+
 <?php get_template_part('includes/footer'); ?>

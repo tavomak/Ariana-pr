@@ -11,22 +11,25 @@
             </ol>-->
             <!-- Wrapper for slides -->
             <div class="carousel-inner" role="listbox">
-                <div class="item active"> <img src="<?php bloginfo('template_directory'); ?>/asset/img/slide1.jpg" alt="..."  style="width: 100%; height: auto;">
+                <div class="item active"> <img src="<?php bloginfo('template_directory'); ?>/asset/img/slide1.jpg" alt="WELCOME TO MY BLOG">
                     <div class="carousel-caption invisible"><h1>WELCOME TO MY BLOG</h1></div>
                 </div>
-                <div class="item"> <img src="<?php bloginfo('template_directory'); ?>/asset/img/slide2.jpg" alt="..."  style="width: 100%; height: auto;">
+                <div class="item"> <img src="<?php bloginfo('template_directory'); ?>/asset/img/slide2.jpg" alt="DELICIOUS FOOD">
                     <div class="carousel-caption invisible"><h1>DELICIOUS FOOD</h1></div>
                 </div>
-                <div class="item"> <img src="<?php bloginfo('template_directory'); ?>/asset/img/slide3.jpg" alt="..."  style="width: 100%; height: auto;">
+                <div class="item"> <img src="<?php bloginfo('template_directory'); ?>/asset/img/slide3.jpg" alt="TOP EVENTS">
                     <div class="carousel-caption invisible"><h1>TOP EVENTS</h1></div>
                 </div>
-                <div class="item"> <img src="<?php bloginfo('template_directory'); ?>/asset/img/slide4.jpg" alt="..."  style="width: 100%; height: auto;">
+                <div class="item"> <img src="<?php bloginfo('template_directory'); ?>/asset/img/slide4.jpg" alt="TRAVEL TIPS">
                     <div class="carousel-caption invisible"><h1>TRAVEL TIPS</h1></div>
                 </div>
-                <div class="item"> <img src="<?php bloginfo('template_directory'); ?>/asset/img/slide5.jpg" alt="..."  style="width: 100%; height: auto;">
+                <div class="item"> <img src="<?php bloginfo('template_directory'); ?>/asset/img/slide5.jpg" alt="FASHION STYLING">
                     <div class="carousel-caption invisible"><h1>FASHION STYLING</h1></div>
                 </div>
-                <div class="item"> <img src="<?php bloginfo('template_directory'); ?>/asset/img/slide6.jpg" alt="..."  style="width: 100%; height: auto;">
+                <div class="item"> <img src="<?php bloginfo('template_directory'); ?>/asset/img/slide6.jpg" alt="STAY MOTIVATED">
+                    <div class="carousel-caption invisible"><h1>STAY MOTIVATED</h1></div>
+                </div>
+                <div class="item"> <img src="<?php bloginfo('template_directory'); ?>/asset/img/slide7.jpg" alt="Media Outlets">
                     <div class="carousel-caption invisible"><h1>STAY MOTIVATED</h1></div>
                 </div>
             </div>
@@ -46,7 +49,7 @@
 
             <div class="col-sm-4">
                 <div class="hovereffect">
-                   <img src="<?php the_post_thumbnail_url('medium_large'); ?>" class="">
+                   <img src="<?php the_post_thumbnail_url('medium_large'); ?>" class="img-r">
                     <a href="<?php the_permalink();?>" class="link">
                         <div class="overlay">
                             <h2><?php echo the_title();?></h2>
@@ -99,7 +102,8 @@
                 'title_li' => '',
                 'show_count' => 0,
                 'pad_counts' => 0,
-                'include' => '3,4,5,6,7,'
+                'include' => '3,4,5,6,7,',
+                'orderby' => 'name'
             );
             wp_list_categories($args);
             ?>
@@ -132,10 +136,25 @@
             </ul>
             <h3>subcribe (Member VIP)</h3>
             <div class="input-group">
-                <input type="text" class="form-control" placeholder="">
+                <!--<input type="text" class="form-control" placeholder="">
                 <span class="input-group-btn">
                     <button class="btn btn-default" type="button">Go!</button>
-                </span>
+                </span>-->
+                <?php
+                $args = array(
+                'prepend' => '',
+                'showname' => true,
+                'nametxt' => '',
+                'nameholder' => 'Name',
+                'emailtxt' => '',
+                'emailholder' => 'Email',
+                'showsubmit' => true,
+                'submittxt' => 'Go!',
+                'jsthanks' => false,
+                'thankyou' => 'Thank you for subscribing to our mailing list'
+                );
+                echo smlsubform($args);
+                ?>
             </div>
             <!-- /input-group -->
         </div>

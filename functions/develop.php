@@ -50,24 +50,29 @@ function add_last_nav_item($items) {
   return $items .= '<li><a type="button" data-toggle="modal" data-target="#say-hellow">Contact</a></li>';
 }
 add_filter('wp_nav_menu_items','add_last_nav_item');
-/*
-//Gets post cat slug and looks for single-[cat slug].php and applies it
-add_filter('single_template', 'check_for_category_single_template');
-function check_for_category_single_template( $t )
-{
-  foreach( (array) get_the_category() as $cat )
-  {
-    if ( file_exists(TEMPLATEPATH . "/single-category-{$cat->slug}.php") ) return TEMPLATEPATH . "/single-category-{$cat->slug}.php";
-    if($cat->parent)
-    {
-      $cat = get_the_category_by_ID( $cat->parent );
-      if ( file_exists(TEMPLATEPATH . "/single-category-{$cat->slug}.php") ) return TEMPLATEPATH . "/single-category-{$cat->slug}.php";
+
+//ocultar avisos
+function wp_hide_update() {
+        global $current_user;
+        get_currentuserinfo();
+
+        if ($current_user->ID != 1) { // solo el admin lo ve, cambia el ID de usuario si no es el 1 o añade todso los IDs de admin
+            remove_action( 'admin_notices', 'update_nag', 3 );
+        }
     }
-  }
-  return $t;
-}*/
+    add_action('admin_menu','wp_hide_update');
+//limitar extracto
 function custom_excerpt_length( $length ) {
         return 10;
     }
     add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
+
+// add editor the privilege to edit theme
+
+// get the the role object
+$role_object = get_role( 'editor' );
+
+// add $cap capability to this role object
+$role_object->add_cap( 'edit_theme_options' );
+
 ?>

@@ -1,0 +1,60 @@
+@font-face {
+  font-family: 'noto-r';
+  src: url("../fonts/lora-regular-webfont.woff2") format("woff2"), url("../fonts/lora-regular-webfont.woff") format("woff"), url("../fonts/lora-regular-webfont.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'noto-b';
+  src: url("../fonts/lora-bold-webfont.ttf") format("truetype");
+}
+
+.promo-bio {
+  padding: 0;
+}
+
+.promo-bio .promo-bio-content img {
+  width: 100%;
+  height: auto;
+}
+
+.bio-content .gradient-red {
+  margin: 0 0 50px 0;
+  padding: 20px 0 20px 0;
+  background-color: red;
+  background-color: #e00a0a;
+  background-image: -webkit-radial-gradient(#e00a0a, #8e0606);
+  background-image: radial-gradient(  #e00a0a, #8e0606);
+}
+
+.bio-content .gradient-red h1 {
+  color: white;
+}
+
+.bio-content h1 {
+  margin: 50px 0 50px 0;
+}
+
+.bio-content strong {
+  font-size: 18px;
+}
+
+.bio-content p {
+  font-size: 16px;
+}
+
+.no-cssgradients .gradient-red {
+  background: url(../img/gradient-red.jpg) repeat-x;
+}
+
+.bio-gallery {
+  margin-top: 50px;
+}
+
+.grid-item {
+  width: 33%;
+  padding: 5px;
+}
+
+.grid-item--width2 {
+  width: 400px;
+}

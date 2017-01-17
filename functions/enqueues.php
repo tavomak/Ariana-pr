@@ -62,11 +62,9 @@ Delete (or comment-out) the next two lines of code below if you don't want the B
 
     /*if(is_page('bio') ) {
 
-        wp_register_script('maso', get_template_directory_uri() . '/asset/js/masonry.pkgd.min.js', false, null, false);
-        wp_register_script('maso-in', get_template_directory_uri() . '/asset/js/a-pr-m.js', false, null, false);
+        wp_register_style('a-pr-bio', get_template_directory_uri() . '/asset/css/layouts/bio.css', false, null);
 
-        wp_enqueue_script('maso');
-        wp_enqueue_script('maso-in');
+        wp_enqueue_style('a-pr-bio');
 
     }*/
 

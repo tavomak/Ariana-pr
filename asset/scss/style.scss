@@ -2,10 +2,12 @@
 @import 'partials/_media'; // Media Queries MQ(s,m,l,xl)
 @import 'partials/_mixins'; // centrado vertical/horizontal y fallback fuentes
 @import 'partials/_variables'; // colores, tipos de letra y personalizados
+@import 'modules/loader';
 @import 'layouts/nav';
 @import 'layouts/global';
-@import 'modules/loader';
 @import 'layouts/carousel';
+@import 'layouts/bio';
 @import 'layouts/categories';
 @import 'layouts/single';
 @import 'layouts/contacto';
+@import 'layouts/social';

@@ -6,9 +6,9 @@
                                 <button type="button" data-dismiss="modal" aria-label="Cerrar" class="close"><span aria-hidden="true">&times;</span></button>
                                 <h3 class="modal-tittle text-center">SAY HELLO!</h3> </div>
                             <div class="modal-body">
-                                <form>
+                                <div>
                                     <?php echo do_shortcode( '[contact-form-7 id="52" title="Formulario de contacto 1"]' ); ?>
-                                </form>
+                                </div>
                             </div>
                         </div>
                     </div>

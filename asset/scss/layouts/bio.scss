@@ -1,0 +1,40 @@
+.promo-bio{
+    padding: 0;
+    .promo-bio-content{
+        img{
+            width: 100%;
+            height: auto;
+        }
+    }
+}
+.bio-content{
+    .gradient-red{
+        margin: 0 0 50px 0;
+        padding: 20px 0 20px 0;
+        background-color: red;
+        @include radial-gradient(#e00a0a, #8e0606);
+        h1{
+            color: $white;
+        }
+    }
+    h1{margin: 50px 0 50px 0;}
+    strong{
+        font-size: 18px;
+    }
+    p{
+        font-size: 16px;
+    }
+}
+
+.no-cssgradients .gradient-red{
+    background: url(../img/gradient-red.jpg) repeat-x;
+}
+.bio-gallery{
+    margin-top: 50px;
+}
+
+.grid-item {
+    width: 33%;
+    padding: 5px;
+}
+.grid-item--width2 { width: 400px; }

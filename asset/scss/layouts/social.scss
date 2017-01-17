@@ -1,0 +1,86 @@
+.social {
+    color: $white;
+    background: $color-4;
+    padding-bottom: 45px;
+
+    .socio {
+        //max-width: 400px;
+        margin: 0 auto;
+        ul{
+            margin: 0 auto;
+            padding: 25px;
+        }
+        .input-group{
+            margin: 0 auto;
+            margin-top: 25px;
+            width: 100%;
+            .sml_subscribe {
+                display: table;
+                margin: 0 auto;
+                .sml_hiddenfield {
+                    text-align: center;
+                }
+                .sml_name,
+                .sml_email,
+                .sml_submit {
+                    display: inline-block;
+                    margin: 5px;
+                    color: black;
+                    @include MQ(S) {
+                        width: 100%;
+                    }
+                    input {
+                        @include MQ(S) {
+                            width: 100%;
+                        }
+                        height: 30px;
+                        width: 100%;
+                        padding: 0;
+                    }
+                    .sml_submitbtn {
+                        padding: 0 10px 0 10px;
+                        @include MQ(S) {
+                            width: 100%;
+                        }
+                        &:hover {
+                            background: $color-3;
+                            color: $white;
+                        }
+                    }
+                    ::-webkit-input-placeholder {
+                        color: $color-1;
+                        text-align: center;
+                    }
+                    :-moz-placeholder {
+                        /* Firefox 18- */
+                        color: $color-1;
+                        text-align: center;
+                    }
+                    ::-moz-placeholder {
+                        /* Firefox 19+ */
+                        color: $color-1;
+                        text-align: center;
+                    }
+                    :-ms-input-placeholder {
+                        color: $color-1;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+    h2{
+        margin: 25px 0 0 0;
+    }
+    ul{
+        //max-width: 400px;
+        margin: 15px 0 25px 0;
+        li{
+           width: 33%;
+            text-align: center;
+        }
+    }
+    h2,h3{
+        text-align: center;
+    }
+}

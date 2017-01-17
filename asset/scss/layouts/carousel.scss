@@ -3,7 +3,7 @@
         .carousel-inner{
             .item{
                 max-height: 70vh;
-                width: 100%;
+                overflow: hidden;
                 .carousel-caption{
                     top: 55%;
                     width: 100%;
@@ -17,22 +17,42 @@
                     }
                 }
                 img{
+                    width: 100%;
+                    height: 100%;
+                    @include MQ(S){
+                        position: relative;
+                        left: -35%;
+                        min-height: 150%;
+                        min-width: 150%;
+                    }
                 }
             }
         }
     }
 }
+
 .frases-slide{
     min-height:340px;
     .slide{
         margin: 70px 0 0 0;
         min-height: 250px;
+        display: block;
+        @include MQ(S){
+                margin: 0;
+            min-height: 100%;
+            }
         h1,h2,h3,h4,h5{
             padding: 30px 0 0 0;
             margin: 0 auto;
             max-width: 75%;
             font-family: $font-1;
             //font-size: 36px;
+            @include MQ(S){
+                font-size: 24px;
+            }
+            @include MQ(M){
+                font-size: 26px;
+            }
         }
         p{
             margin: 20px 0 0 0;}
