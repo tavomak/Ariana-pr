@@ -1,32 +1,32 @@
 // fonts
 @font-face{
-    font-family: 'noto-r';
-    //src: url('../fonts/lora-regular-webfont.eot'); /* IE9 Compat Modes */
-    src: //url('../fonts/lora-regular-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('../fonts/lora-regular-webfont.woff2') format('woff2'), /* Super Modern Browsers */
-       url('../fonts/lora-regular-webfont.woff') format('woff'), /* Pretty Modern Browsers */
-       url('../fonts/lora-regular-webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
-       //url('../fonts/lora-regular-webfont.svg#svgFontName') format('svg'); /* Legacy iOS */
+    font-family: 'raleway-light';
+    src: url('../fonts/raleway-light-webfont.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/raleway-light-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/raleway-light-webfont.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/raleway-light-webfont.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/raleway-light-webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/raleway-light-webfont.svg#svgFontName') format('svg'); /* Legacy iOS */
 }
 @font-face{
     font-family: 'noto-b';
     //src: url('../fonts/lora-bold-webfont.eot'); /* IE9 Compat Modes */
-    src: //url('../fonts/lora-bold-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    //src: //url('../fonts/lora-bold-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
        //url('../fonts/lora-bold-webfont.woff2') format('woff2'), /* Super Modern Browsers */
        //url('../fonts/lora-bold-webfont.woff') format('woff'), /* Pretty Modern Browsers */
-       url('../fonts/lora-bold-webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
+       //url('../fonts/lora-bold-webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
        //url('../fonts/lora-bold-webfont.svg#svgFontName') format('svg'); /* Legacy iOS */
 }
-$font-1: 'noto-r', serif;
-$font-2: 'noto-b', serif;
+$font-1: sans-serif;
+$font-2: 'raleway-light', sans-serif;
 $regular: 400;
 $bold:700;
 
 // colors
 $color-1: #333333;
 $color-2: rgb(255, 231, 168);
-$color-3: #b92b27;
-$color-4: rgba(26, 41, 59, 0.5);
+$color-3: #333;
+$color-4: #333;
 $white: white;
 
 // z-index

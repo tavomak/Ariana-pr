@@ -8,8 +8,13 @@
     .img-r {
         min-width: 100%;
     }*/
+    margin-top: 50px;
+    margin-bottom: 50px;
+    h1{
+        margin-bottom: 20px;
+    }
     ul{
-        margin: 80px 0 80px 0;
+        //margin: 80px 0 80px 0;
         li{
             overflow: hidden;
             margin-bottom: 25px;
@@ -79,7 +84,7 @@
             }
             a:hover span{
                 opacity: 1;
-                background: rgba(214, 44, 44, 0.8);
+                background: rgba(8, 1, 1, 0.8);
                 border-top: 1px solid $white;
                 border-bottom: 1px solid $white;
             }
@@ -138,9 +143,9 @@
 .archive{
     .article{
         //min-height: 460px !important;
-        margin-bottom: 30px;
+        margin-bottom: 20px;
         @include MQ(MXL){
-            min-height: 460px !important;
+            min-height: 380px !important;
         }
         //margin-bottom: 50px;
         //position: relative;

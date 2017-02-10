@@ -39,44 +39,19 @@
         </div>
     </section><!-- Carousel estatico -->
     <?php get_template_part('includes/slideshow'); ?>
-    <section class="recent container-fluid">
-       <div class="container">
-           <h1>Recent Blog Post</h1>
-        <?php
-        $recents = new WP_Query(array('showposts'=>3,'cat'=>"3,4,5,6,7"));
-        ?>
-        <?php if ( $recents->have_posts() ) : while ( $recents->have_posts() ) : $recents->the_post(); ?>
-
-            <div class="col-sm-4">
-                <div class="hovereffect">
-                   <img src="<?php the_post_thumbnail_url('medium_large'); ?>" class="img-r">
-                    <a href="<?php the_permalink();?>" class="link">
-                        <div class="overlay">
-                            <h2><?php echo the_title();?></h2>
-                            <a class="info" href="<?php the_permalink();?>">Go There!</a>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        <?php endwhile; else: ?>
-           <p class="text-center">soon we'll be found</p>
-        <?php endif; ?>
-        <?php wp_reset_query(); ?>
-       </div>
-    </section><!-- Recientes -->
 
       <section class="recent container-fluid">
-       <div class="container">
-           <h1>Media Outlets</h1>
+       <div class="container sec-loop">
+           <h1>MEDIA OUTLETS</h1>
         <?php
         $recents = new WP_Query(array(
             'category_name'=>'Media Outlets',
-            'showposts'=>3
+            'showposts'=>4
         ));
         ?>
         <?php if ( $recents->have_posts() ) : while ( $recents->have_posts() ) : $recents->the_post(); ?>
 
-            <div class="col-sm-4">
+            <div class="col-sm-6 col-md-4 last">
                 <div class="hovereffect">
                    <img src="<?php the_post_thumbnail_url('medium_large'); ?>" class="">
                     <a href="<?php the_permalink();?>" class="link">
@@ -95,6 +70,7 @@
     </section><!-- Recientes -->
 
     <section class="container categories">
+       <h1 class="text-center">SECTIONS</h1>
         <ul class="row">
             <?php
             $args = array(
@@ -110,6 +86,32 @@
             <li><a href="https://www.instagram.com/arianapr/" target="_blank">instagram</a></li>
         </ul>
     </section><!-- Categorias-->
+
+    <section class="recent container-fluid">
+       <div class="container sec-loop">
+           <h1>RECENT BLOG POST</h1>
+        <?php
+        $recents = new WP_Query(array('showposts'=>4,'cat'=>"3,4,5,6,7"));
+        ?>
+        <?php if ( $recents->have_posts() ) : while ( $recents->have_posts() ) : $recents->the_post(); ?>
+
+            <div class="col-sm-6 col-md-4 last">
+                <div class="hovereffect">
+                   <img src="<?php the_post_thumbnail_url('medium_large'); ?>" class="img-r">
+                    <a href="<?php the_permalink();?>" class="link">
+                        <div class="overlay">
+                            <h2><?php echo the_title();?></h2>
+                            <a class="info" href="<?php the_permalink();?>">Go There!</a>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        <?php endwhile; else: ?>
+           <p class="text-center">soon we'll be found</p>
+        <?php endif; ?>
+        <?php wp_reset_query(); ?>
+       </div>
+    </section>
 
     <section class="container-fluid social">
         <div class="socio">

@@ -90,9 +90,9 @@ hr{
 }
 a:hover{text-decoration: none;}
 .wrapp{
-    @include linear-gradient(to top, #0066b0, #003356);
+    /*@include linear-gradient(to top, #0066b0, #003356);
     background-image: url(../img/bk.png);
-    background-size: contain;
+    background-size: contain;*/
 }
 .wrapper-pag{
     display: table;
@@ -104,16 +104,25 @@ a:hover{text-decoration: none;}
     margin-bottom: 50px;
 }
 
-
 .hovereffect {
+    background: #fff;
     width:100%;
-    max-height:300px;
+    //max-height:220px;
     float:left;
     overflow:hidden;
     position:relative;
     text-align:center;
     cursor:default;
     margin-bottom: 10px;
+    @include MQ(XL){
+        height: 250px;
+    }@include MQ(L){
+        height: 220px;
+    }@include MQ(M){
+        height: 300px;
+    }@include MQ(S){
+        height: 200px;
+    }
     .overlay {
         width:100%;
         height:100%;
@@ -128,8 +137,9 @@ a:hover{text-decoration: none;}
     img {
         position:relative;
         @include transition (all .4s linear);
-        max-height: 380px;
-        min-width: 100%;
+        height: auto;
+        width: 110%;
+        //max-width: 130%;
     }
     /*.img-r {
         min-width: 100%;
@@ -140,7 +150,7 @@ a:hover{text-decoration: none;}
         text-align:center;
         position:relative;
         font-size:17px;
-        background:rgba(214, 44, 44, 0.8);
+        background:rgba(8, 1, 1, 0.8);
         @include transform(translateY(-100px));
         @include transition (all .2s ease-in-out);
         padding:10px;
@@ -186,8 +196,8 @@ a:hover{text-decoration: none;}
 }
 
 .recent{
-    background: $color-4;
-    color: $white;
+    //background: $color-4;
+    //color: $white;
     padding:20px 0 30px 0;
     h1{
         text-align: center;
@@ -198,4 +208,22 @@ a:hover{text-decoration: none;}
             height: 300px;
             //max-height: 340px;
         }*/
+}
+.wp-embed{
+    max-width: 80%;
+}
+.iframe-flexible-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px;
+    height: 0;
+}
+.iframe-flexible-container iframe,
+.iframe-flexible-container object,
+.iframe-flexible-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100%;
 }

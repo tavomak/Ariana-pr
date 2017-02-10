@@ -1,11 +1,13 @@
 @font-face {
-  font-family: 'noto-r';
-  src: url("../fonts/lora-regular-webfont.woff2") format("woff2"), url("../fonts/lora-regular-webfont.woff") format("woff"), url("../fonts/lora-regular-webfont.ttf") format("truetype");
+  font-family: 'raleway-light';
+  src: url("../fonts/raleway-light-webfont.eot");
+  /* IE9 Compat Modes */
+  src: url("../fonts/raleway-light-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/raleway-light-webfont.woff2") format("woff2"), url("../fonts/raleway-light-webfont.woff") format("woff"), url("../fonts/raleway-light-webfont.ttf") format("truetype"), url("../fonts/raleway-light-webfont.svg#svgFontName") format("svg");
+  /* Legacy iOS */
 }
 
 @font-face {
   font-family: 'noto-b';
-  src: url("../fonts/lora-bold-webfont.ttf") format("truetype");
 }
 
 .js div#preloader {
@@ -134,7 +136,7 @@ svg {
 }
 
 .navbar {
-  font-family: "noto-b", serif;
+  font-family: "raleway-light", sans-serif;
   background: white;
   border: 0;
   margin: 0;
@@ -212,12 +214,12 @@ html, body {
 }
 
 body {
-  font-family: "noto-r", serif;
+  font-family: sans-serif;
   color: #333333;
 }
 
 h1, h2, h3, h4 {
-  font-family: "noto-b", serif;
+  font-family: "raleway-light", sans-serif;
 }
 
 a, ol li {
@@ -282,11 +284,9 @@ a:hover {
 }
 
 .wrapp {
-  background-color: #0066b0;
-  background-image: -webkit-linear-gradient(bottom, #0066b0, #003356);
-  background-image: linear-gradient(to top,#0066b0, #003356);
-  background-image: url(../img/bk.png);
-  background-size: contain;
+  /*@include linear-gradient(to top, #0066b0, #003356);
+    background-image: url(../img/bk.png);
+    background-size: contain;*/
 }
 
 .wrapper-pag {
@@ -301,8 +301,8 @@ a:hover {
 }
 
 .hovereffect {
+  background: #fff;
   width: 100%;
-  max-height: 300px;
   float: left;
   overflow: hidden;
   position: relative;
@@ -312,6 +312,30 @@ a:hover {
   /*.img-r {
         min-width: 100%;
     }*/
+}
+
+@media only screen and (min-width: 1281px) {
+  .hovereffect {
+    height: 250px;
+  }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1280px) {
+  .hovereffect {
+    height: 220px;
+  }
+}
+
+@media handheld, only screen and (min-width: 481px) and (max-width: 768px) {
+  .hovereffect {
+    height: 300px;
+  }
+}
+
+@media handheld, only screen and (max-width: 480px) {
+  .hovereffect {
+    height: 200px;
+  }
 }
 
 .hovereffect .overlay {
@@ -333,8 +357,8 @@ a:hover {
   -webkit-transition: all 0.4s linear;
   -moz-transition: all 0.4s linear;
   transition: all 0.4s linear;
-  max-height: 380px;
-  min-width: 100%;
+  height: auto;
+  width: 110%;
 }
 
 .hovereffect h2 {
@@ -343,7 +367,7 @@ a:hover {
   text-align: center;
   position: relative;
   font-size: 17px;
-  background: rgba(214, 44, 44, 0.8);
+  background: rgba(8, 1, 1, 0.8);
   -webkit-transform: translateY(-100px);
   -moz-transform: translateY(-100px);
   -ms-transform: translateY(-100px);
@@ -416,8 +440,6 @@ a:hover {
 }
 
 .recent {
-  background: rgba(26, 41, 59, 0.5);
-  color: white;
   padding: 20px 0 30px 0;
   /*img{
             width: 100%;
@@ -429,6 +451,27 @@ a:hover {
 .recent h1 {
   text-align: center;
   margin-bottom: 20px;
+}
+
+.wp-embed {
+  max-width: 80%;
+}
+
+.iframe-flexible-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 30px;
+  height: 0;
+}
+
+.iframe-flexible-container iframe,
+.iframe-flexible-container object,
+.iframe-flexible-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100%;
 }
 
 .static_carousel .carousel .carousel-inner .item {
@@ -454,15 +497,6 @@ a:hover {
   height: 100%;
 }
 
-@media handheld, only screen and (max-width: 480px) {
-  .static_carousel .carousel .carousel-inner .item img {
-    position: relative;
-    left: -35%;
-    min-height: 150%;
-    min-width: 150%;
-  }
-}
-
 .frases-slide {
   min-height: 340px;
 }
@@ -471,7 +505,6 @@ a:hover {
   margin: 70px 0 0 0;
   min-height: 250px;
   display: block;
-  color: white;
 }
 
 @media handheld, only screen and (max-width: 480px) {
@@ -485,7 +518,7 @@ a:hover {
   padding: 30px 0 0 0;
   margin: 0 auto;
   max-width: 75%;
-  font-family: "noto-r", serif;
+  font-family: sans-serif;
 }
 
 @media handheld, only screen and (max-width: 480px) {
@@ -506,6 +539,10 @@ a:hover {
 
 .frases-slide .carousel-control {
   background: none;
+}
+
+.frases-slide .carousel-control {
+  color: #333;
 }
 
 .promo-bio {
@@ -569,10 +606,12 @@ a:hover {
     .img-r {
         min-width: 100%;
     }*/
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
-.categories ul {
-  margin: 80px 0 80px 0;
+.categories h1 {
+  margin-bottom: 20px;
 }
 
 .categories ul li {
@@ -673,7 +712,7 @@ a:hover {
 
 .categories ul li a:hover span {
   opacity: 1;
-  background: rgba(214, 44, 44, 0.8);
+  background: rgba(8, 1, 1, 0.8);
   border-top: 1px solid white;
   border-bottom: 1px solid white;
 }
@@ -739,12 +778,12 @@ a:hover {
 }
 
 .archive .article {
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 @media only screen and (min-width: 768px) {
   .archive .article {
-    min-height: 460px !important;
+    min-height: 380px !important;
   }
 }
 
@@ -765,7 +804,7 @@ a:hover {
 }
 
 .articulo-title {
-  background: #b92b27;
+  background: #333;
   padding: 10px;
 }
 
@@ -807,7 +846,7 @@ a:hover {
 .sidebar section h4 {
   padding: 10px 5px 10px 8px;
   color: white;
-  background: #b92b27;
+  background: #333;
   margin: 0 0 10px 0;
 }
 
@@ -816,7 +855,7 @@ a:hover {
 }
 
 .sidebar section a:hover {
-  color: #b92b27;
+  color: #333;
 }
 
 .video-container {
@@ -844,7 +883,7 @@ a:hover {
   max-width: 100%;
 }
 
-.post p, ol li {
+ol li {
   line-height: 1.5em;
 }
 
@@ -871,7 +910,7 @@ a:hover {
 
 .contacto #social-media ul li span {
   font-size: 25px;
-  color: #b92b27;
+  color: #333;
 }
 
 .contacto #social-media ul li span:hover {
@@ -903,7 +942,7 @@ a:hover {
 }
 
 .wpcf7 input[type=submit] {
-  background: #b92b27;
+  background: #333;
 }
 
 .wpcf7 {
@@ -915,7 +954,7 @@ a:hover {
 .wpcf7 input[type=submit] {
   margin: 10px;
   width: 200px;
-  background: #b92b27;
+  background: #333;
   border: none;
   height: 60px;
 }
@@ -941,7 +980,7 @@ a:hover {
 
 .social {
   color: white;
-  background: rgba(26, 41, 59, 0.5);
+  background: #333;
   padding-bottom: 45px;
 }
 
@@ -1018,7 +1057,7 @@ a:hover {
 .social .socio .input-group .sml_subscribe .sml_name .sml_submitbtn:hover,
 .social .socio .input-group .sml_subscribe .sml_email .sml_submitbtn:hover,
 .social .socio .input-group .sml_subscribe .sml_submit .sml_submitbtn:hover {
-  background: #b92b27;
+  background: #333;
   color: white;
 }
 
