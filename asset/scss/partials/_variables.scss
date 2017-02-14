@@ -9,7 +9,7 @@
        url('../fonts/raleway-light-webfont.svg#svgFontName') format('svg'); /* Legacy iOS */
 }
 @font-face{
-    font-family: 'noto-b';
+    font-family: 'sans-serif';
     //src: url('../fonts/lora-bold-webfont.eot'); /* IE9 Compat Modes */
     //src: //url('../fonts/lora-bold-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
        //url('../fonts/lora-bold-webfont.woff2') format('woff2'), /* Super Modern Browsers */
@@ -17,7 +17,7 @@
        //url('../fonts/lora-bold-webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
        //url('../fonts/lora-bold-webfont.svg#svgFontName') format('svg'); /* Legacy iOS */
 }
-$font-1: sans-serif;
+$font-1: 'sans-serif', sans-serif;
 $font-2: 'raleway-light', sans-serif;
 $regular: 400;
 $bold:700;
@@ -26,7 +26,7 @@ $bold:700;
 $color-1: #333333;
 $color-2: rgb(255, 231, 168);
 $color-3: #333;
-$color-4: #333;
+$color-4: #d41f1f;
 $white: white;
 
 // z-index

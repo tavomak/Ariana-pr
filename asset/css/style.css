@@ -7,7 +7,7 @@
 }
 
 @font-face {
-  font-family: 'noto-b';
+  font-family: 'sans-serif';
 }
 
 .js div#preloader {
@@ -157,8 +157,13 @@ svg {
 }
 
 .navbar .container .navbar-nav {
-  width: 100%;
   text-align: center;
+}
+
+@media only screen and (min-width: 768px) {
+  .navbar .container .navbar-nav {
+    width: 100%;
+  }
 }
 
 .navbar .container .navbar-nav li {
@@ -173,6 +178,7 @@ svg {
 
 .navbar .container .navbar-nav li a {
   font-size: 18px;
+  text-transform: uppercase;
 }
 
 .navbar .container .navbar-nav .dropdown-menu li {
@@ -214,12 +220,16 @@ html, body {
 }
 
 body {
-  font-family: sans-serif;
+  font-family: "sans-serif", sans-serif;
   color: #333333;
 }
 
 h1, h2, h3, h4 {
   font-family: "raleway-light", sans-serif;
+}
+
+h1 {
+  text-transform: uppercase;
 }
 
 a, ol li {
@@ -501,6 +511,12 @@ a:hover {
   min-height: 340px;
 }
 
+@media handheld, only screen and (max-width: 480px) {
+  .frases-slide {
+    min-height: 200px;
+  }
+}
+
 .frases-slide .slide {
   margin: 70px 0 0 0;
   min-height: 250px;
@@ -515,21 +531,22 @@ a:hover {
 }
 
 .frases-slide .slide h1, .frases-slide .slide h2, .frases-slide .slide h3, .frases-slide .slide h4, .frases-slide .slide h5 {
+  text-transform: inherit;
   padding: 30px 0 0 0;
   margin: 0 auto;
   max-width: 75%;
-  font-family: sans-serif;
+  font-family: "sans-serif", sans-serif;
 }
 
 @media handheld, only screen and (max-width: 480px) {
   .frases-slide .slide h1, .frases-slide .slide h2, .frases-slide .slide h3, .frases-slide .slide h4, .frases-slide .slide h5 {
-    font-size: 24px;
+    font-size: 18px;
   }
 }
 
 @media handheld, only screen and (min-width: 481px) and (max-width: 768px) {
   .frases-slide .slide h1, .frases-slide .slide h2, .frases-slide .slide h3, .frases-slide .slide h4, .frases-slide .slide h5 {
-    font-size: 26px;
+    font-size: 20px;
   }
 }
 
@@ -563,8 +580,23 @@ a:hover {
   background-image: radial-gradient(  #e00a0a, #8e0606);
 }
 
+@media handheld, only screen and (max-width: 768px) {
+  .bio-content .gradient-red {
+    padding: 5px 0 5px 0;
+    margin: 0 0 20px 0;
+  }
+}
+
 .bio-content .gradient-red h1 {
   color: white;
+}
+
+@media handheld, only screen and (max-width: 768px) {
+  .bio-content .gradient-red h1 {
+    font-size: 18px;
+    text-align: center;
+    text-transform: capitalize;
+  }
 }
 
 .bio-content h1 {
@@ -804,7 +836,7 @@ a:hover {
 }
 
 .articulo-title {
-  background: #333;
+  background: #d41f1f;
   padding: 10px;
 }
 
@@ -846,7 +878,7 @@ a:hover {
 .sidebar section h4 {
   padding: 10px 5px 10px 8px;
   color: white;
-  background: #333;
+  background: #d41f1f;
   margin: 0 0 10px 0;
 }
 
@@ -855,7 +887,7 @@ a:hover {
 }
 
 .sidebar section a:hover {
-  color: #333;
+  color: #d41f1f;
 }
 
 .video-container {
