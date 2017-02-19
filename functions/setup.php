@@ -6,6 +6,7 @@ function a_pr_setup() {
     update_option('thumbnail_size_w', 170);
     update_option('medium_size_w', 470);
     update_option('large_size_w', 970);
+    update_option('medium_large', 768);
 }
 add_action('init', 'a_pr_setup');
 

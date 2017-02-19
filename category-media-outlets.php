@@ -10,6 +10,12 @@
 </section>
 
 <section class="recent container-fluid">
+        <div class="container">
+            <h4>This empowered young woman uses her voice and every possible media to and provide quality information and entertainment. She has been a TV and Radio host collaborator in different TV Channels such as <b>CNN,  Telemundo, Mega TV, NBC, Estrella TV</b> and others.  Her motivation to influence while entertaining others doesn’t stop here! </h4>
+            <br>
+            <br>
+            <br>
+        </div>
 
         <?php
         $destacados = new WP_Query(array(
@@ -18,7 +24,7 @@
         ));
         ?>
         <?php if ( $destacados->have_posts() ) : ?>
-        <h1>Destacados</h1>
+        <h1>Top Media</h1>
         <?php while ( $destacados->have_posts() ) : $destacados->the_post(); ?>
 
         <div class="col-sm-6 col-md-4 col-lg-3 article post">

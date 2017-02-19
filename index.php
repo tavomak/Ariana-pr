@@ -70,7 +70,7 @@
     </section><!-- Recientes -->
 
     <section class="container categories">
-       <h1 class="text-center">SECTIONS</h1>
+       <h1 class="text-center">BLOG THEMES</h1>
         <ul class="row">
             <?php
             $args = array(
