@@ -1,5 +1,4 @@
 <?php get_template_part('includes/header'); ?>
-<div id="preloader">...</div><!-- loading -->
 <div class="container">
   <div class="row">
 

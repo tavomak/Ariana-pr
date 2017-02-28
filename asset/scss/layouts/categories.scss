@@ -140,14 +140,41 @@
         }
     }
 }
-.archive{
+.archive, .all-post{
     .article{
-        //min-height: 460px !important;
         margin-bottom: 20px;
         @include MQ(MXL){
             min-height: 380px !important;
         }
-        //margin-bottom: 50px;
-        //position: relative;
+    }
+}
+
+.all-post{
+    .postre{
+        .postre-title{
+            background: $color-4;
+            color: $white;
+            text-transform: uppercase;
+            padding: 5px 0 5px 0;
+        }
+    }
+
+}
+.top-media-outlet-section{
+    .top-media-outlet-container{
+        margin-bottom: 50px;
+        .top-media-outlet-info{
+            .top-media-outlet-txt{
+                padding: 25px 0 25px 0;
+            }
+            ul{
+                li{
+                    height: 80px;
+                    padding: 10px;
+                    img{
+                    }
+                }
+            }
+        }
     }
 }

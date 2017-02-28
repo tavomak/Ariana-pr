@@ -22,6 +22,7 @@
 	You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.
 </div>
 <![endif]-->
+       <div id="preloader">...</div><!-- loading -->
         <div class="brand text-center">
             <a  href="<?php echo home_url('/'); ?>">
                 <img class="" src="<?php bloginfo('template_directory'); ?>/asset/img/apr-logo3.jpg" alt="Ariana PR">

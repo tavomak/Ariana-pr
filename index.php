@@ -1,5 +1,4 @@
 <?php get_template_part('includes/header'); ?>
-<div id="preloader">...</div><!-- loading -->
 <div class="wrapp">
     <section class="static_carousel">
         <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
@@ -11,10 +10,14 @@
             </ol>-->
             <!-- Wrapper for slides -->
             <div class="carousel-inner" role="listbox">
-                <div class="item active"> <img src="<?php bloginfo('template_directory'); ?>/asset/img/slide1.jpg" alt="WELCOME TO MY BLOG">
-                    <div class="carousel-caption invisible"><h1>WELCOME TO MY BLOG</h1></div>
+                <div class="item active">
+                    <img src="<?php bloginfo('template_directory'); ?>/asset/img/slide1.jpg" alt="WELCOME TO MY BLOG">
+                    <div class="carousel-caption invisible">
+                        <h1>WELCOME TO MY BLOG</h1>
+                    </div>
                 </div>
-                <div class="item"> <img src="<?php bloginfo('template_directory'); ?>/asset/img/slide2.jpg" alt="DELICIOUS FOOD">
+                <div class="item">
+                   <img src="<?php bloginfo('template_directory'); ?>/asset/img/slide2.jpg" alt="DELICIOUS FOOD">
                     <div class="carousel-caption invisible"><h1>DELICIOUS FOOD</h1></div>
                 </div>
                 <div class="item"> <img src="<?php bloginfo('template_directory'); ?>/asset/img/slide3.jpg" alt="TOP EVENTS">
@@ -53,7 +56,7 @@
 
             <div class="col-sm-6 col-md-4 last">
                 <div class="hovereffect">
-                   <img src="<?php the_post_thumbnail_url('medium_large'); ?>" class="">
+                   <img src="<?php the_post_thumbnail_url('medium'); ?>" class="">
                     <a href="<?php the_permalink();?>" class="link">
                         <div class="overlay">
                             <h2><?php echo the_title();?></h2>
@@ -97,7 +100,7 @@
 
             <div class="col-sm-6 col-md-4 last">
                 <div class="hovereffect">
-                   <img src="<?php the_post_thumbnail_url('medium_large'); ?>" class="img-r">
+                   <img src="<?php the_post_thumbnail_url('medium'); ?>" class="img-r">
                     <a href="<?php the_permalink();?>" class="link">
                         <div class="overlay">
                             <h2><?php echo the_title();?></h2>

@@ -5,7 +5,6 @@ Template Name: Bio
 ?>
 
 <?php get_template_part('includes/header'); ?>
-<div id="preloader">...</div><!-- loading -->
 <div class="container-fluid promo-bio">
     <div class="promo-bio-content">
         <img src="<?php bloginfo('template_directory'); ?>/asset/img/wandre.jpg" alt="" class="img-responsive">
@@ -27,38 +26,9 @@ Template Name: Bio
     </div>
 </div>
 
-
 <?php endwhile; else: ?>
 
 <p><?php _e('Lo siento, no encontre nada para mostrar.'); ?></p>
 <?php endif; ?>
-
-<!--<div class="bio-gallery container">
-    <div class="grid">
-        <div class="grid-item"><img src="<?php bloginfo('template_directory'); ?>/asset/img/001.jpg" alt="" class="img-responsive"></div>
-        <div class="grid-item"><img src="<?php bloginfo('template_directory'); ?>/asset/img/002.jpg" alt="" class="img-responsive"></div>
-        <div class="grid-item"><img src="<?php bloginfo('template_directory'); ?>/asset/img/003.jpg" alt="" class="img-responsive"></div>
-        <div class="grid-item"><img src="<?php bloginfo('template_directory'); ?>/asset/img/004.jpg" alt="" class="img-responsive"></div>
-        <div class="grid-item"><img src="<?php bloginfo('template_directory'); ?>/asset/img/005.jpg" alt="" class="img-responsive"></div>
-        <div class="grid-item"><img src="<?php bloginfo('template_directory'); ?>/asset/img/006.jpg" alt="" class="img-responsive"></div>
-        <div class="grid-item"><img src="<?php bloginfo('template_directory'); ?>/asset/img/007.jpg" alt="" class="img-responsive"></div>
-        <div class="grid-item"><img src="<?php bloginfo('template_directory'); ?>/asset/img/008.jpg" alt="" class="img-responsive"></div>
-        <div class="grid-item"><img src="<?php bloginfo('template_directory'); ?>/asset/img/009.jpg" alt="" class="img-responsive"></div>
-        <div class="grid-item"><img src="<?php bloginfo('template_directory'); ?>/asset/img/010.jpg" alt="" class="img-responsive"></div>
-        <div class="grid-item"><img src="<?php bloginfo('template_directory'); ?>/asset/img/011.jpg" alt="" class="img-responsive"></div>
-        <div class="grid-item"><img src="<?php bloginfo('template_directory'); ?>/asset/img/012.jpg" alt="" class="img-responsive"></div>
-        <div class="grid-item"><img src="<?php bloginfo('template_directory'); ?>/asset/img/013.jpg" alt="" class="img-responsive"></div>
-        <div class="grid-item"><img src="<?php bloginfo('template_directory'); ?>/asset/img/014.jpg" alt="" class="img-responsive"></div>
-        <div class="grid-item"><img src="<?php bloginfo('template_directory'); ?>/asset/img/015.jpg" alt="" class="img-responsive"></div>
-        <div class="grid-item"><img src="<?php bloginfo('template_directory'); ?>/asset/img/016.jpg" alt="" class="img-responsive"></div>
-        <div class="grid-item"><img src="<?php bloginfo('template_directory'); ?>/asset/img/017.jpg" alt="" class="img-responsive"></div>
-        <div class="grid-item"><img src="<?php bloginfo('template_directory'); ?>/asset/img/018.jpg" alt="" class="img-responsive"></div>
-        <div class="grid-item"><img src="<?php bloginfo('template_directory'); ?>/asset/img/019.jpg" alt="" class="img-responsive"></div>
-        <div class="grid-item"><img src="<?php bloginfo('template_directory'); ?>/asset/img/020.jpg" alt="" class="img-responsive"></div>
-        <div class="grid-item"><img src="<?php bloginfo('template_directory'); ?>/asset/img/021.jpg" alt="" class="img-responsive"></div>
-        <div class="grid-item"><img src="<?php bloginfo('template_directory'); ?>/asset/img/022.jpg" alt="" class="img-responsive"></div>
-        <div class="grid-item"><img src="<?php bloginfo('template_directory'); ?>/asset/img/023.jpg" alt="" class="img-responsive"></div>
-    </div>
-</div>-->
 
 <?php get_template_part('includes/footer'); ?>

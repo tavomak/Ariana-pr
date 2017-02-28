@@ -10,9 +10,6 @@ function a_pr_setup() {
 }
 add_action('init', 'a_pr_setup');
 
-if (! isset($content_width))
-	$content_width = 600;
-
 function a_pr_excerpt_readmore() {
     return '&hellip;';//'&nbsp; <a href="'. get_permalink() . '">' . '&hellip; ' . __('Read more', 'a-pr') . ' <i class="glyphicon glyphicon-arrow-right"></i>' . '</a></p>';
 }
@@ -60,31 +57,35 @@ add_filter( 'body_class', 'a_pr_browser_body_class' );
 
 // Bootstrap pagination
 
-if ( ! function_exists( 'a_pr_pagination' ) ) {
-	function a_pr_pagination() {
-		global $wp_query;
-		$big = 999999999; // This needs to be an unlikely integer
-		// For more options and info view the docs for paginate_links()
-		// http://codex.wordpress.org/Function_Reference/paginate_links
-		$paginate_links = paginate_links( array(
-			'base' => str_replace( $big, '%#%', get_pagenum_link($big) ),
-			'current' => max( 1, get_query_var('paged') ),
-			'total' => $wp_query->max_num_pages,
-			'mid_size' => 5,
-			'prev_next' => True,
-			'prev_text' => __('<i class="glyphicon glyphicon-chevron-left"></i> Newer'),
-			'next_text' => __('Older <i class="glyphicon glyphicon-chevron-right"></i>'),
-			'type' => 'list'
-		) );
-		$paginate_links = str_replace( "<ul class='page-numbers'>", "<ul class='pagination'>", $paginate_links );
-		$paginate_links = str_replace( "<li><span class='page-numbers current'>", "<li class='active'><a href='#'>", $paginate_links );
-		$paginate_links = str_replace( "</span>", "</a>", $paginate_links );
-		$paginate_links = preg_replace( "/\s*page-numbers/", "", $paginate_links );
-		// Display the pagination if more than one page is found
-		if ( $paginate_links ) {
-			echo $paginate_links;
-		}
-	}
+// Bootstrap pagination
+function ar_pr_pagination( $query=null ) {
+
+  global $wp_query;
+  $query = $query ? $query : $wp_query;
+  $big = 999999999;
+
+  $paginate = paginate_links( array(
+    'base' => str_replace( $big, '%#%', esc_url( get_pagenum_link( $big ) ) ),
+    'type' => 'array',
+    'total' => $query->max_num_pages,
+    'format' => '?paged=%#%',
+    'current' => max( 1, get_query_var('paged') ),
+    'prev_text' => __('&larr;'),
+    'next_text' => __('&rarr;'),
+    )
+  );
+
+  if ($query->max_num_pages > 1) :
+?>
+<ul class="pagination">
+  <?php
+  foreach ( $paginate as $page ) {
+    echo '<li>' . $page . '</li>';
+  }
+  ?>
+</ul>
+<?php
+  endif;
 }
 
 add_theme_support( 'woocommerce' );

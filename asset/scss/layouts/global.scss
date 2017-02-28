@@ -38,6 +38,11 @@ body{
     color: $color-1;
     //background-image: url("../img/tr1.png"), url("../img/tr2.png"), url("../img/tr3.png");
 }
+body .category{
+    &:before{
+        display: none;
+    }
+}
 h1, h2, h3, h4{
     font-family: $font-2;
 }

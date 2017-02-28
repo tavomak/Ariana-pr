@@ -1,5 +1,4 @@
 <?php get_template_part('includes/header'); ?>
-<div id="preloader">...</div><!-- loading -->
 <hr>
 <div class="articulo-title">
    <div class="caption">

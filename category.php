@@ -1,5 +1,5 @@
 <?php get_template_part('includes/header'); ?>
-<div id="preloader">...</div><!-- loading -->
+
 <section class="container-fluid promo">
     <?php if ( in_category( 'attract' ) ) : ?>
        <div class="promo-content">
@@ -49,9 +49,9 @@
     <div class="row">
         <?php if ( have_posts() ) : ?>
         <?php while ( have_posts() ) : the_post(); ?>
-        <div class="col-sm-6 col-md-4 col-lg-3 article post">
+        <div class="col-sm-6 col-md-4 col-lg-3 article postre">
             <div class="hovereffect">
-               <img src="<?php the_post_thumbnail_url(); ?>" class="img">
+               <img src="<?php the_post_thumbnail_url('medium'); ?>" class="img">
                 <a href="<?php the_permalink();?>" class="link">
                     <div class="overlay">
                         <h2><?php echo the_title();?></h2>
@@ -66,7 +66,7 @@
     </div><!-- /.row -->
 </section><!-- /.container -->
             <div class="wrapper-pag"  id="#nav-below">
-        <?php if ( function_exists('a_pr_pagination') ) { a_pr_pagination(); } else if ( is_paged() ) { ?>
+        <?php if ( function_exists('ar_pr_pagination') ) { ar_pr_pagination(); } else if ( is_paged() ) { ?>
                 <ul class="pagination">
                     <li class="older" id="nav-below-first"><?php next_posts_link('<i class="glyphicon glyphicon-arrow-left"></i> ' . __('Previous', 'a-pr')) ?></li>
                     <li class="newer"><?php previous_posts_link(__('Next', 'a-pr') . ' <i class="glyphicon glyphicon-arrow-right"></i>') ?></li>

@@ -224,6 +224,10 @@ body {
   color: #333333;
 }
 
+body .category:before {
+  display: none;
+}
+
 h1, h2, h3, h4 {
   font-family: "raleway-light", sans-serif;
 }
@@ -573,7 +577,7 @@ a:hover {
 
 .bio-content .gradient-red {
   margin: 0 0 50px 0;
-  padding: 20px 0 20px 0;
+  padding: 10px 0 10px 0;
   background-color: red;
   background-color: #e00a0a;
   background-image: -webkit-radial-gradient(#e00a0a, #8e0606);
@@ -600,7 +604,7 @@ a:hover {
 }
 
 .bio-content h1 {
-  margin: 50px 0 50px 0;
+  margin: 25px 0 25px 0;
 }
 
 .bio-content strong {
@@ -809,14 +813,34 @@ a:hover {
   height: auto;
 }
 
-.archive .article {
+.archive .article, .all-post .article {
   margin-bottom: 20px;
 }
 
 @media only screen and (min-width: 768px) {
-  .archive .article {
+  .archive .article, .all-post .article {
     min-height: 380px !important;
   }
+}
+
+.all-post .postre .postre-title {
+  background: #d41f1f;
+  color: white;
+  text-transform: uppercase;
+  padding: 5px 0 5px 0;
+}
+
+.top-media-outlet-section .top-media-outlet-container {
+  margin-bottom: 50px;
+}
+
+.top-media-outlet-section .top-media-outlet-container .top-media-outlet-info .top-media-outlet-txt {
+  padding: 25px 0 25px 0;
+}
+
+.top-media-outlet-section .top-media-outlet-container .top-media-outlet-info ul li {
+  height: 80px;
+  padding: 10px;
 }
 
 .articulo {

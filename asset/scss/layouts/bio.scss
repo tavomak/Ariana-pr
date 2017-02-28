@@ -10,7 +10,7 @@
 .bio-content{
     .gradient-red{
         margin: 0 0 50px 0;
-        padding: 20px 0 20px 0;
+        padding: 10px 0 10px 0;
         background-color: red;
         @include radial-gradient(#e00a0a, #8e0606);
         @include MQ(SM){
@@ -27,7 +27,7 @@
         }
     }
     h1{
-        margin: 50px 0 50px 0;
+        margin: 25px 0 25px 0;
     }
     strong{
         font-size: 18px;
