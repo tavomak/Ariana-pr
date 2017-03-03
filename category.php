@@ -46,10 +46,10 @@
     <?php endif; ?>
 </section>
 <section class="container-fluid archive" id="content">
-    <div class="row">
+    <div class="row yi-content-selector">
         <?php if ( have_posts() ) : ?>
         <?php while ( have_posts() ) : the_post(); ?>
-        <div class="col-sm-6 col-md-4 col-lg-3 article postre">
+        <div class="col-sm-6 col-md-4 col-lg-3 article yi-item-selector">
             <div class="hovereffect">
                <img src="<?php the_post_thumbnail_url('medium'); ?>" class="img">
                 <a href="<?php the_permalink();?>" class="link">

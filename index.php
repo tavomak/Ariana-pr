@@ -100,7 +100,7 @@
 
             <div class="col-sm-6 col-md-4 last">
                 <div class="hovereffect">
-                   <img src="<?php the_post_thumbnail_url('medium'); ?>" class="img-r">
+                   <img src="<?php the_post_thumbnail_url('medium'); ?>">
                     <a href="<?php the_permalink();?>" class="link">
                         <div class="overlay">
                             <h2><?php echo the_title();?></h2>

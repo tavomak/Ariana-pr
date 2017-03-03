@@ -1,18 +1,18 @@
 <?php get_template_part('includes/header'); ?>
 
-<section class="container-fluid promo">
+<section class="container-fluid promo"><!--Banner Con imagen principal-->
    <div class="promo-content">
        <img src="<?php bloginfo('template_directory'); ?>/asset/img/slide7.jpg" alt="Media Outlets" class="img-responsive">
    </div>
-</section>
+</section><!-- /Banner Con imagen principal-->
 
-<section class="top-media-outlet-section container-fluid">
+<section class="top-media-outlet-section container-fluid"><!--Contenido Introductorio de la seccion Media Outlest-->
         <div class="container top-media-outlet-container">
             <div class="row top-media-outlet-info">
                <div class="col-sm-5 top-media-outlet-txt">
-                   <h2>Ariana is an empowered young woman</h2>
+                   <h2>Ariana</h2>
                    <br>
-                    <h4 class="text-justify">that uses her voice and every possible media to provide quality information and entertainment. She has been a TV and Radio host collaborator in different TV Channels such as  CNN,  Telemundo, Mega TV, NBC, Estrella TV and others. She is also a fashion stylist to top celebrities, a renown designer, and creative TV producer. Her motivation to influence while entertaining others is limitless.</h4>
+                    <h4>is an empowered young woman that uses her voice and every possible media to provide quality information and entertainment. She has been a TV and Radio host collaborator in different TV Channels such as <strong>CNN,  Telemundo, Mega TV, NBC, Estrella TV</strong> and others. She is also a fashion stylist to top celebrities, a renown designer, and creative TV producer. Her motivation to influence while entertaining others is limitless.</h4>
                </div>
                <div class="col-sm-1"></div>
                <ul class="col-sm-6 list-inline text-center">
@@ -27,11 +27,12 @@
                     <li class="col-xs-3 text-center"><img class="img-responsive" src="<?php bloginfo('template_directory'); ?>/asset/img/telemundo.jpg" alt="Telemundo"></li>
                     <li class="col-xs-3 text-center"><img class="img-responsive" src="<?php bloginfo('template_directory'); ?>/asset/img/rcn.jpg" alt="Rcn"></li>
                     <li class="col-xs-3 text-center"><img class="img-responsive" src="<?php bloginfo('template_directory'); ?>/asset/img/estrella.jpg" alt="Estrella tv"></li>
+                    <li class="col-xs-3 text-center"><img class="img-responsive" src="<?php bloginfo('template_directory'); ?>/asset/img/univ.jpg" alt="Univisión"></li>
                 </ul>
             </div>
         </div>
 
-        <?php
+        <?php //Loop para mostrar articulos destacados bajo la subcategoria Destacado
         $destacados = new WP_Query(array(
             'category_name'=>'destacado',
             'showposts'=>4
@@ -55,16 +56,15 @@
         <?php endwhile; else: ?>
         <?php endif; ?>
         <?php wp_reset_query(); ?>
+</section><!--/Contenido Introductorio de la seccion Media Outlest-->
 
-</section><!-- Recientes -->
-
-<section class="container-fluid archive" id="content">
-    <div class="row">
+<section class="container-fluid archive" id="content"><!-- Contenedor de los articulos -->
+    <div class="row yi-content-selector">
         <?php if ( have_posts() ) : ?>
         <h1 class="text-center">Media Outlets</h1>
         <br><br>
         <?php while ( have_posts() ) : the_post(); ?>
-        <div class="col-sm-6 col-md-4 col-lg-3 article postre">
+        <div class="col-sm-6 col-md-4 col-lg-3 article yi-item-selector">
             <div class="hovereffect">
                <img src="<?php the_post_thumbnail_url('medium'); ?>" class="img">
                 <a href="<?php the_permalink();?>" class="link">
@@ -79,9 +79,9 @@
         </div>
         <?php endwhile; ?>
     </div><!-- /.row -->
-</section><!-- /.container -->
+</section><!-- /.container Contenedor de los articulos -->
 
-<div class="wrapper-pag"  id="#nav-below">
+<div class="wrapper-pag"  id="#nav-below"><!-- Paginacion -->
     <?php if ( function_exists('ar_pr_pagination') ) { ar_pr_pagination(); } else if ( is_paged() ) { ?>
         <ul class="pagination">
             <li class="older" id="nav-below-first"><?php next_posts_link('<i class="glyphicon glyphicon-arrow-left"></i> ' . __('Previous', 'a-pr')) ?></li>
@@ -91,6 +91,6 @@
     <?php else: ?>
         <h1 class="text-center">soon we'll be found</h1>
     <?php endif; ?>
-</div>
+</div><!-- /paginacion-->
 
 <?php get_template_part('includes/footer'); ?>

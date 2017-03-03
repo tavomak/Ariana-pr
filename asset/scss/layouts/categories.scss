@@ -1,129 +1,4 @@
-.categories{
-    /*.img {
-        position:relative;
-        @include transition (all .4s linear);
-        width: 100%;
-        height: auto;
-    }
-    .img-r {
-        min-width: 100%;
-    }*/
-    margin-top: 50px;
-    margin-bottom: 50px;
-    h1{
-        margin-bottom: 20px;
-    }
-    ul{
-        //margin: 80px 0 80px 0;
-        li{
-            overflow: hidden;
-            margin-bottom: 25px;
-            @include MQ(L){
-                height: 280px;
-            }
-            a{
-                @include transition (all .4s ease-in-out);
-                position: relative;
-                display: block;
-                width: 100%;
-                height: 100%;
-                text-align: center;
-                padding-top: 60%;
-                padding-bottom: 20%;
-                z-index: 5;
-                text-transform: capitalize;
-                @include MQ(L){
-                    font-size: 22px;
-                }@include MQ(M){
-                    font-size: 19px;
-                }
-                font-size: 24px;
-                overflow: hidden;
-                color: $white;
-                .button{
-                    position: absolute;
-                    display: block;
-                    width: 100%;
-                    height: 60px;
-                    //border: 1px solid white;
-                    top: 0%;
-                    margin-top: 57%;
-                    background: rgba(0, 0, 0, 1);
-                    opacity: .1;
-                    z-index: -1;
-                    @include transition (all .2s ease-in-out);
-                }
-                &:after{
-                    content: '';
-                    position: absolute;
-                    width: 100%;
-                    height: 100%;
-                    z-index: -2;
-                    left: 0;
-                    top: 0;
-                    @include transition (all .4s ease-in-out);
-                }
-                &:before{
-                    content: '';
-                    position: absolute;
-                    width: 100%;
-                    height: 100%;
-                    z-index: -1;
-                    left: 0;
-                    top: 0;
-                    background-color:rgba(144, 107, 107, 0.5);
-                    opacity: 0.8;
-                    @include transition (all .2s ease-in-out);
-                }
-            }
-            a:hover:after{
-                @include transform (scale(1.2));
-            }
-            a:hover:before{
-                opacity: 0;
-            }
-            a:hover span{
-                opacity: 1;
-                background: rgba(8, 1, 1, 0.8);
-                border-top: 1px solid $white;
-                border-bottom: 1px solid $white;
-            }
-            &:nth-child(1) a:after{
-                background: url(../img/1.jpg) no-repeat;
-                background-size: cover;
-            }
-            &:nth-child(2) a:after{
-                background: url(../img/3.jpg) no-repeat;
-                background-size: cover;
-            }
-            &:nth-child(3) a:after{
-                background: url(../img/2.jpg) no-repeat;
-                background-size: cover;
-            }
-            &:nth-child(4) a:after{
-                background: url(../img/4.jpg) no-repeat;
-                background-size: cover;
-            }
-            &:nth-child(5) a:after{
-                background: url(../img/5.jpg) no-repeat;
-                background-size: cover;
-            }
-            &:nth-child(6) a:after{
-                background: url(../img/6.jpg) no-repeat;
-                background-size: cover;
-            }
-            &:nth-child(7) a:after{
-                background: url(../img/7.jpeg) no-repeat;
-                background-size: cover;
-            }
-            &:nth-child(8) a:after{
-                background: url(../img/8.jpeg) no-repeat;
-                background-size: cover;
-            }
-        }
-    }
-}
-.promo{
+.promo{//Baner con imagen full width de las paginas de categoria
     padding: 0;
     color: white;
     margin-bottom: 50PX;
@@ -140,34 +15,22 @@
         }
     }
 }
-.archive, .all-post{
+.archive, .all-post{//Espaciado de los articulos en category y page con el contenido del post
     .article{
-        margin-bottom: 20px;
+        margin-bottom: 10px;
         @include MQ(MXL){
             min-height: 380px !important;
         }
     }
 }
-
-.all-post{
-    .postre{
-        .postre-title{
-            background: $color-4;
-            color: $white;
-            text-transform: uppercase;
-            padding: 5px 0 5px 0;
-        }
-    }
-
-}
-.top-media-outlet-section{
+.top-media-outlet-section{//Pagina media outlets
     .top-media-outlet-container{
         margin-bottom: 50px;
         .top-media-outlet-info{
-            .top-media-outlet-txt{
+            .top-media-outlet-txt{// Texto introductorio de media outlets
                 padding: 25px 0 25px 0;
             }
-            ul{
+            ul{//Cintenedor de imagenes de logos con la participacion en medios
                 li{
                     height: 80px;
                     padding: 10px;

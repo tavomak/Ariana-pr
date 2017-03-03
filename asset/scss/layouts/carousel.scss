@@ -1,4 +1,4 @@
-.static_carousel{
+.static_carousel{//Carrousel de imagenes en la pagina de inicio
     .carousel{
         .carousel-inner{
             .item{
@@ -27,7 +27,7 @@
     }
 }
 
-.frases-slide{
+.frases-slide{//carousel de frases en la pagina de inicio
     min-height:340px;
     @include MQ(S){
         min-height:200px;

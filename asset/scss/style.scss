@@ -2,12 +2,10 @@
 @import 'partials/_media'; // Media Queries MQ(s,m,l,xl)
 @import 'partials/_mixins'; // centrado vertical/horizontal y fallback fuentes
 @import 'partials/_variables'; // colores, tipos de letra y personalizados
-@import 'modules/loader';
-@import 'layouts/nav';
-@import 'layouts/global';
-@import 'layouts/carousel';
-@import 'layouts/bio';
-@import 'layouts/categories';
-@import 'layouts/single';
-@import 'layouts/contacto';
-@import 'layouts/social';
+@import 'modules/loader'; //Precarga del sitio
+@import 'layouts/nav'; //Navegacion del sitio
+@import 'layouts/global'; // Elementos comunes del sitio
+@import 'layouts/carousel'; //bootstrap slides en la pagina principal
+@import 'layouts/categories'; //Estilos para las Paginas de categorias
+@import 'layouts/contacto'; //Modal de contacto del sitio
+@import 'layouts/all-post'; //Estilos de pagina all-post

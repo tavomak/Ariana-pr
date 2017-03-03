@@ -1,0 +1,117 @@
+.all-post {//Pagina all my blogs donde se muestran todos los post por categorias
+    .yi-item-selector {
+        .postre-title {
+            display: block;
+            color: $white;
+            text-transform: uppercase;
+            padding: 5px 0 5px 10px;
+            text-align: left;
+            width: 100%;
+            background: $color-4;
+            /*
+            &.travel-the-world {
+                background: #FFD15D;
+            }
+            &.attract {
+                background: #324A5E;
+            }
+            &.work-out {
+                background: #90DFAA;
+            }
+            &.fomo-events {
+                background: #E15050;
+            }
+            &.style {
+                background: #324A5E;
+            }
+            */
+        }
+    }
+    .article:hover {
+        .category-attract,
+        .category-fomo-events,
+        .category-work-out,
+        .category-style,
+        .category-travel-the-world {
+            opacity: 0;
+        }
+    }
+    .category-attract,
+    .category-fomo-events,
+    .category-work-out,
+    .category-style,
+    .category-travel-the-world {
+        width: 44px;
+        height: 44px;
+        position: absolute;
+        right: -5px;
+        z-index: $zindex-5;
+        top: -20px;
+        @include transition (all .4s ease-in-out);
+    }
+    .category-attract {
+        background: url(../img/003-ar.png) no-repeat;
+        background-size: contain;
+    }
+    .category-fomo-events {
+        background: url(../img/006-ar.png) no-repeat;
+        background-size: contain;
+    }
+    .category-work-out {
+        background: url(../img/004-ar.png) no-repeat;
+        background-size: contain;
+    }
+    .category-style {
+        background: url(../img/007-ar.png) no-repeat;
+        background-size: contain;
+    }
+    .category-travel-the-world {
+        background: url(../img/005-ar.png) no-repeat;
+        background-size: contain;
+    }
+}
+#sidebar-article{
+    .sidebar-article-widget-area{//sidebar de pagina que muestra todos los post
+        section{
+            padding: 0 20px 20px 20px;
+            margin-bottom: 20px;
+            border: 1px solid $color-3;
+            h4{
+                border-bottom: 1px solid $color-3;
+                padding: 0 10px 10px 0;
+                margin: 5px 5px 5px 0;
+                font-weight: $bold;
+            }
+            a{
+                color: $color-3;
+                &:hover{
+                    color: $color-4;
+                }
+            }
+            p,li{
+               margin-bottom: 10px;
+            }
+        }
+    }
+}
+section .sml_subscribe_widget{
+    .textwidget{
+        margin-top: 10px;
+        .sml_subscribe{
+            .sml_nameinput{
+                width: 100%;
+            }
+            .sml_emailinput{
+                width: 100%;
+            }
+            .sml_submitbtn{
+                width: 100%;
+                text-transform: capitalize;
+                &:hover {
+                    background: $color-4;
+                    color: $white;
+                }
+            }
+        }
+    }
+}

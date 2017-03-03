@@ -37,40 +37,46 @@ Un-comment the next two lines of code if you want to use WordPress's onboard jQu
 */
 
 	wp_register_style('bootstrap-css', get_template_directory_uri() . '/asset/css/bootstrap.min.css', false, '3.3.4', null);
+    wp_register_style('a-pr-css', get_template_directory_uri() . '/asset/css/style-dist.css', false, null);
+
 	wp_enqueue_style('bootstrap-css');
-
-/*
-OPTIONAL: Bootstrap Theme enqueued
-==================================
-Delete (or comment-out) the next two lines of code below if you don't want the Bootstrap Theme.
-*/
-
-  	wp_register_style('a-pr-css', get_template_directory_uri() . '/asset/css/style-dist.css', false, null);
 	wp_enqueue_style('a-pr-css');
 
-  	wp_register_script('modernizr', get_template_directory_uri() . '/asset/js/modernizr-2.8.3.min.js', false, null, false);
-	wp_enqueue_script('modernizr');
 
-  	wp_register_script('bootstrap-js', get_template_directory_uri() . '/asset/js/bootstrap.min.js', false, null, true);
-	wp_enqueue_script('bootstrap-js');
-
+    wp_register_script('modernizr', get_template_directory_uri() . '/asset/js/modernizr-2.8.3.min.js', false, null, false);
+    wp_register_script('bootstrap-js', get_template_directory_uri() . '/asset/js/bootstrap.min.js', false, null, true);
 	wp_register_script('a-pr-preload', get_template_directory_uri() . '/asset/js/preload-dist.js', false, null, true);
-	wp_enqueue_script('a-pr-preload');
-
     wp_register_script('a-pr-js', get_template_directory_uri() . '/asset/js/a-pr-dist.js', false, null, true);
+
+	wp_enqueue_script('modernizr');
+	wp_enqueue_script('bootstrap-js');
+	wp_enqueue_script('a-pr-preload');
 	wp_enqueue_script('a-pr-js');
 
-    /*if(is_page('bio') ) {
+    if(is_page('bio') ) {
 
-        wp_register_style('a-pr-bio', get_template_directory_uri() . '/asset/css/layouts/bio.css', false, null);
-
+        wp_register_style('a-pr-bio', get_template_directory_uri() . '/asset/css/bio-dist.css', false, null);
         wp_enqueue_style('a-pr-bio');
 
-    }*/
+    }
+    if(is_home() ) {
+
+        wp_register_style('a-pr-home', get_template_directory_uri() . '/asset/css/index-dist.css', false, null);
+        wp_enqueue_style('a-pr-home');
+
+    }
+
+    if(is_single() ) {
+
+        wp_register_style('a-pr-single', get_template_directory_uri() . '/asset/css/single-dist.css', false, null);
+        wp_enqueue_style('a-pr-single');
+
+    }
 
 	if (is_singular() && comments_open() && get_option('thread_comments')) {
 		wp_enqueue_script('comment-reply');
 	}
+
 }
 add_action('wp_enqueue_scripts', 'a_pr_enqueues', 100);
 

@@ -1,97 +1,88 @@
-.articulo{
+@import 'bourbon'; // http://bourbon.io/
+@import '../partials/_media'; // Media Queries MQ(s,m,l,xl)
+@import '../partials/_mixins'; // centrado vertical/horizontal y fallback fuentes
+@import '../partials/_variables'; // colores, tipos de letra y personalizados
+
+.articulo {
     margin-top: 25px;
-    h2{
+    h2 {
         background: #efefef;
         margin: 0;
-        padding: 5px 0 5px 20px;;
+        padding: 5px 0 5px 20px;
+        ;
     }
-    img{
+    img {
         width: 100%;
         height: auto;
-        margin:10px 0 25px 0;
+        margin: 10px 0 25px 0;
     }
 }
-.articulo-title{
+
+.articulo-title {
     background: $color-4;
     padding: 10px;
-    a{
+    a {
         font-size: 36px;
         color: $white;
-        @include MQ(LXL){
+        @include MQ(LXL) {
             margin-left: 50px;
         }
     }
-    h1{
+    h1 {
         font-size: 36px;
         color: $white;
-        @include MQ(LXL){
+        @include MQ(LXL) {
             margin-left: 50px;
         }
     }
 }
-.attact{
-    //background: $color-3;
-}
-.eat{
-    //background: $color-4;
-}
-.fomo{
-    //background: $color-5;
-}
-.style{
-    //background: $color-6;
-}
-.travel{
-    //background: $color-7;
-}
-.sidebar{
-    padding-top: 35px;
-    section{
-        margin: 10px 0 10px 0;
-        //border: 1px solid grey;
-        padding: 10px;
-        ul{
-            li{
-                margin: 0 0 5px 0;
-            }
-        }
-        h4{
-            padding:10px 5px 10px 8px;
-            color: $white;
-            background: $color-4;
-            margin: 0 0 10px 0;
-        }
-        a{
-            color: $color-1;
-            &:hover{
-                color: $color-4;
-            }
-        }
-    }
-}
+
 .video-container {
-	position: relative;
-	padding-bottom: 56.25%;
-	padding-top: 30px;
-	height: 0;
-	overflow: hidden;
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px;
+    height: 0;
+    overflow: hidden;
 }
 
 .video-container iframe,
 .video-container object,
 .video-container embed {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
+
 .entry-content img,
 .entry-content iframe,
 .entry-content object,
 .entry-content embed {
     max-width: 100%;
 }
-ol li{
-line-height: 1.5em;
+
+ol li {
+    line-height: 1.5em;
+}
+
+.wp-embed {
+    max-width: 80%;
+}
+
+.iframe-flexible-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px;
+    height: 0;
+}
+
+.iframe-flexible-container iframe,
+.iframe-flexible-container object,
+.iframe-flexible-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100%;
 }
