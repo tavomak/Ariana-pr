@@ -9,13 +9,12 @@
 <section class="top-media-outlet-section container-fluid"><!--Contenido Introductorio de la seccion Media Outlest-->
         <div class="container top-media-outlet-container">
             <div class="row top-media-outlet-info">
-               <div class="col-sm-5 top-media-outlet-txt">
-                   <h2>Ariana</h2>
+               <div class="col-sm-12 top-media-outlet-txt">
                    <br>
-                    <h4>is an empowered young woman that uses her voice and every possible media to provide quality information and entertainment. She has been a TV and Radio host collaborator in different TV Channels such as <strong>CNN,  Telemundo, Mega TV, NBC, Estrella TV</strong> and others. She is also a fashion stylist to top celebrities, a renown designer, and creative TV producer. Her motivation to influence while entertaining others is limitless.</h4>
+                    <h4><strong class="ar-title">Ariana</strong> is an empowered young woman that uses her voice and every possible media to provide quality information and entertainment. She has been a TV and Radio host collaborator in different TV Channels such as <strong>CNN,  Telemundo, Mega TV, NBC, Estrella TV</strong> and others. She is also a fashion stylist to top celebrities, a renown designer, and creative TV producer. Her motivation to influence while entertaining others is limitless.</h4>
                </div>
-               <div class="col-sm-1"></div>
-               <ul class="col-sm-6 list-inline text-center">
+               <div class="col-sm-12"></div>
+               <ul class="col-sm-12 list-inline text-center">
                     <li class="col-xs-3 text-center"><img class="img-responsive" src="<?php bloginfo('template_directory'); ?>/asset/img/venue.jpg" alt="Venue Magazine"></li>
                     <li class="col-xs-3 text-center"><img class="img-responsive" src="<?php bloginfo('template_directory'); ?>/asset/img/hola.jpg" alt="Revista Hola"></li>
                     <li class="col-xs-3 text-center"><img class="img-responsive" src="<?php bloginfo('template_directory'); ?>/asset/img/cnn.jpg" alt="CNN"></li>

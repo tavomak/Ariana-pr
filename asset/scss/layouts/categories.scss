@@ -29,6 +29,9 @@
         .top-media-outlet-info{
             .top-media-outlet-txt{// Texto introductorio de media outlets
                 padding: 25px 0 25px 0;
+                .ar-title{
+                    font-size: 28px;
+                }
             }
             ul{//Cintenedor de imagenes de logos con la participacion en medios
                 li{
@@ -40,4 +43,8 @@
             }
         }
     }
+}
+.todas-categorias-title{
+    text-transform:uppercase;
+    padding: 20px; 
 }

@@ -5,8 +5,8 @@ $(document).ready(function() {
 
     $('iframe').wrap("<div class='iframe-flexible-container'></div>");
 
-    var x = $('.all-cat-ol li:first-child');
+    /*var x = $('.all-cat-ol li:first-child');
     x.removeClass('col-sm-6 col-md-4 col-lg-3');
-    x.addClass('col-sm-12 col-md-8');
+    x.addClass('col-sm-12 col-md-8');*/
 
 });

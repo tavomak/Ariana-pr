@@ -43,11 +43,15 @@
     .category-travel-the-world {
         width: 44px;
         height: 44px;
-        position: absolute;
-        right: -5px;
-        z-index: $zindex-5;
         top: -20px;
+        right: -5px;
+        position: absolute;
+        z-index: $zindex-5;
         @include transition (all .4s ease-in-out);
+        @include MQ(SM){
+            top: -5px;
+            right: 10px;
+        }
     }
     .category-attract {
         background: url(../img/003-ar.png) no-repeat;

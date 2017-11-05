@@ -48,7 +48,7 @@
            <h1>MEDIA OUTLETS</h1>
         <?php
         $recents = new WP_Query(array(
-            'category_name'=>'Media Outlets',
+            'category_name'=>'destacado',
             'showposts'=>4
         ));
         ?>
