@@ -136,9 +136,9 @@ svg {
       cursor: pointer; }
       @media only screen and (min-width: 769px) {
         .navbar .container .navbar-nav li {
-          width: 20%; } }
+          width: 16.6%; } }
       .navbar .container .navbar-nav li a {
-        font-size: 18px;
+        font-size: 16px;
         text-transform: uppercase; }
     .navbar .container .navbar-nav .dropdown-menu li {
       width: 100%; }
@@ -519,6 +519,9 @@ a:hover {
 
 #recaptcha_area, #recaptcha_table {
   margin: 0 auto !important; }
+
+.arpr-contact-captcha div:first-child {
+  width: auto !important; }
 
 .all-post .yi-item-selector .postre-title {
   display: block;

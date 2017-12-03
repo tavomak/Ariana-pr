@@ -81,7 +81,7 @@
                 'title_li' => '',
                 'show_count' => 0,
                 'pad_counts' => 0,
-                'include' => '3,4,5,6,7,',
+                'include' => '3,4,5,8,9,',
                 'orderby' => 'name'
             );
             wp_list_categories($args);
@@ -145,21 +145,7 @@
                 <span class="input-group-btn">
                     <button class="btn btn-default" type="button">Go!</button>
                 </span>-->
-                <?php
-                $args = array(
-                'prepend' => '',
-                'showname' => true,
-                'nametxt' => '',
-                'nameholder' => 'Name',
-                'emailtxt' => '',
-                'emailholder' => 'Email',
-                'showsubmit' => true,
-                'submittxt' => 'Go!',
-                'jsthanks' => false,
-                'thankyou' => 'Thank you for subscribing to our mailing list'
-                );
-                echo smlsubform($args);
-                ?>
+                <?php echo do_shortcode( '[arpr_news]' ); ?>
             </div>
             <!-- /input-group -->
         </div>

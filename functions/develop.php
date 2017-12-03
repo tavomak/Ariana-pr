@@ -86,4 +86,23 @@ function category_id_class( $classes ) {
 add_filter( 'post_class', 'category_id_class' );
 add_filter( 'body_class', 'category_id_class' );
 
+
+function shortcode_news() {
+    $args = array(
+        'prepend' => '',
+        'showname' => true,
+        'nametxt' => '',
+        'nameholder' => 'Name',
+        'emailtxt' => '',
+        'emailholder' => 'Email',
+        'showsubmit' => true,
+        'submittxt' => 'Go!',
+        'jsthanks' => false,
+        'thankyou' => 'Thank you for subscribing to our mailing list'
+    );
+    
+	return smlsubform($args);
+}
+add_shortcode('arpr_news', 'shortcode_news');
+
 ?>
